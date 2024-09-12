@@ -566,6 +566,71 @@ int main() {
     printf("Digite o PIB:\n", PIB_H4);
     scanf("%d", &PIB_H4);
 
+    densidade_populacional_A1 = (double) populacao_A1 / area_A1;
+    pib_percapita_A1 = (double) PIB_A1 / populacao_A1;
+    densidade_populacional_A2 = (double) populacao_A2 / area_A2;
+    pib_percapita_A2 = (double) PIB_A2 / populacao_A2;
+    densidade_populacional_A3 = (double) populacao_A3 / area_A3;
+    pib_percapita_A3 = (double) PIB_A3 / populacao_A3;
+    densidade_populacional_A4 = (double) populacao_A4 / area_A4;
+    pib_percapita_A4 = (double) PIB_A4 / populacao_A4;
+    densidade_populacional_B1 = (double) populacao_B1 / area_B1;
+    pib_percapita_B1 = (double) PIB_B1 / populacao_B1;
+    densidade_populacional_B2 = (double) populacao_B2 / area_B2;
+    pib_percapita_B2 = (double) PIB_B2 / populacao_B2;
+    densidade_populacional_B3 = (double) populacao_B3 / area_B3;
+    pib_percapita_B3 = (double) PIB_B3 / populacao_B3;
+    densidade_populacional_B4 = (double) populacao_B4 / area_B4;
+    pib_percapita_B4 = (double) PIB_B4 / populacao_B4;
+    densidade_populacional_C1 = (double) populacao_C1 / area_C1;
+    pib_percapita_C1 = (double) PIB_C1 / populacao_C1;
+    densidade_populacional_C2 = (double) populacao_C2 / area_C2;
+    pib_percapita_C2 = (double) PIB_C2 / populacao_C2;
+    densidade_populacional_C3 = (double) populacao_C3 / area_C3;
+    pib_percapita_C3 = (double) PIB_C3 / populacao_C3;
+    densidade_populacional_C4 = (double) populacao_C4 / area_C4;
+    pib_percapita_C4 = (double) PIB_C4 / populacao_C4;
+    densidade_populacional_D1 = (double) populacao_D1 / area_D1;
+    pib_percapita_D1 = (double) PIB_D1 / populacao_D1;
+    densidade_populacional_D2 = (double) populacao_D2 / area_D2;
+    pib_percapita_D2 = (double) PIB_D2 / populacao_D2;
+    densidade_populacional_D3 = (double) populacao_D3 / area_D3;
+    pib_percapita_D3 = (double) PIB_D3 / populacao_D3;
+    densidade_populacional_D4 = (double) populacao_D4 / area_D4;
+    pib_percapita_D4 = (double) PIB_D4 / populacao_D4;
+    densidade_populacional_E1 = (double) populacao_E1 / area_E1;
+    pib_percapita_E1 = (double) PIB_E1 / populacao_E1;
+    densidade_populacional_E2 = (double) populacao_E2 / area_E2;
+    pib_percapita_E2 = (double) PIB_E2 / populacao_E2;
+    densidade_populacional_E3 = (double) populacao_E3 / area_E3;
+    pib_percapita_E3 = (double) PIB_E3 / populacao_E3;
+    densidade_populacional_E4 = (double) populacao_E4 / area_E4;
+    pib_percapita_E4 = (double) PIB_E4 / populacao_E4;
+    densidade_populacional_F1 = (double) populacao_F1 / area_F1;
+    pib_percapita_F1 = (double) PIB_F1 / populacao_F1;
+    densidade_populacional_F2 = (double) populacao_F2 / area_F2;
+    pib_percapita_F2 = (double) PIB_F2 / populacao_F2;
+    densidade_populacional_F3 = (double) populacao_F3 / area_F3;
+    pib_percapita_F3 = (double) PIB_F3 / populacao_F3;
+    densidade_populacional_F4 = (double) populacao_F4 / area_F4;
+    pib_percapita_F4 = (double) PIB_F4 / populacao_F4;
+    densidade_populacional_G1 = (double) populacao_G1 / area_G1;
+    pib_percapita_G1 = (double) PIB_G1 / populacao_G1;
+    densidade_populacional_G2 = (double) populacao_G2 / area_G2;
+    pib_percapita_G2 = (double) PIB_G2 / populacao_G2;
+    densidade_populacional_G3 = (double) populacao_G3 / area_G3;
+    pib_percapita_G3 = (double) PIB_G3 / populacao_G3;
+    densidade_populacional_G4 = (double) populacao_G4 / area_G4;
+    pib_percapita_G4 = (double) PIB_G4 / populacao_G4;
+    densidade_populacional_H1 = (double) populacao_H1 / area_H1;
+    pib_percapita_H1 = (double) PIB_H1 / populacao_H1;
+    densidade_populacional_H2 = (double) populacao_H2 / area_H2;
+    pib_percapita_H2 = (double) PIB_H2 / populacao_H2;
+    densidade_populacional_H3 = (double) populacao_H3 / area_H3;
+    pib_percapita_H3 = (double) PIB_H3 / populacao_H3;
+    densidade_populacional_H4 = (double) populacao_H4 / area_H4;
+    pib_percapita_H4 = (double) PIB_H4 / populacao_H4;
+
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
     // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc;
@@ -615,16 +680,16 @@ int main() {
         printf("Campinas vence em PIB\n");
     }
 
-    printf("São Paulo tem densidade populacional de: %d\n", densidade_populacional_A1);
-    printf("Campinas tem densidade populacional de: %d\n", densidade_populacional_A2);
+    printf("São Paulo tem densidade populacional de: %f\n", densidade_populacional_A1);
+    printf("Campinas tem densidade populacional de: %f\n", densidade_populacional_A2);
     if (densidade_populacional_A1 < densidade_populacional_A2 ){
         printf("São Paulo vence em densidade populacional\n");
     } else{
         printf("Campinas vence densidade populacional\n");
     }
 
-    printf("São Paulo tem PIB per capita de: %d\n", pib_percapita_A1);
-    printf("Campinas tem PIB per capita de: %d\n", pib_percapita_A2);
+    printf("São Paulo tem PIB per capita de: %f\n", pib_percapita_A1);
+    printf("Campinas tem PIB per capita de: %f\n", pib_percapita_A2);
     if (pib_percapita_A1 > pib_percapita_A2 ){
         printf("São Paulo vence em PIB per capita\n");
     } else{
@@ -646,9 +711,9 @@ int main() {
     printf("Ribeirão Preto tem de população: %d\n", populacao_A3);
     printf("São José dos Campos tem de população: %d\n", populacao_A4);
     if (populacao_A3 > populacao_A4 ){
-        printf("São Paulo vence em quantidade de população\n");
+        printf("Ribeirão Preto vence em quantidade de população\n");
     } else{
-        printf("Campinas vence em quantidade de população\n");
+        printf("São José dos Campos vence em quantidade de população\n");
     }
 
     printf("Ribeirão Preto tem área de: %d\n", area_A3);
@@ -667,16 +732,16 @@ int main() {
         printf("São José dos Campos vence em PIB\n");
     }
 
-    printf("Ribeirão Preto tem densidade populacional de: %d\n", densidade_populacional_A3);
-    printf("São José dos Campos tem densidade populacional de: %d\n", densidade_populacional_A4);
+    printf("Ribeirão Preto tem densidade populacional de: %f\n", densidade_populacional_A3);
+    printf("São José dos Campos tem densidade populacional de: %f\n", densidade_populacional_A4);
     if (densidade_populacional_A3 < densidade_populacional_A4 ){
         printf("Ribeirão Preto vence em densidade populacional\n");
     } else{
         printf("São José dos Campos vence densidade populacional\n");
     }
 
-    printf("Ribeirão Preto tem PIB per capita de: %d\n", pib_percapita_A3);
-    printf("São José dos Campos tem PIB per capita de: %d\n", pib_percapita_A4);
+    printf("Ribeirão Preto tem PIB per capita de: %f\n", pib_percapita_A3);
+    printf("São José dos Campos tem PIB per capita de: %f\n", pib_percapita_A4);
     if (pib_percapita_A3 > pib_percapita_A4 ){
         printf("Ribeirão Preto vence em PIB per capita\n");
     } else{
@@ -717,16 +782,16 @@ int main() {
         printf("Joinville vence em PIB\n");
     }
 
-    printf("Florianópolis tem densidade populacional de: %d\n", densidade_populacional_B1);
-    printf("Joinville  tem densidade populacional de: %d\n", densidade_populacional_B2);
+    printf("Florianópolis tem densidade populacional de: %f\n", densidade_populacional_B1);
+    printf("Joinville  tem densidade populacional de: %f\n", densidade_populacional_B2);
     if (densidade_populacional_B1 < densidade_populacional_B2 ){
         printf("Florianópolis vence em densidade populacional\n");
     } else{
         printf("Joinville  vence densidade populacional\n");
     }
 
-    printf("Florianópolis tem PIB per capita de: %d\n", pib_percapita_B1);
-    printf("Joinville  tem PIB per capita de: %d\n", pib_percapita_B2);
+    printf("Florianópolis tem PIB per capita de: %f\n", pib_percapita_B1);
+    printf("Joinville  tem PIB per capita de: %f\n", pib_percapita_B2);
     if (pib_percapita_B1 > pib_percapita_B2 ){
         printf("Florianópolis vence em PIB per capita\n");
     } else{
@@ -767,16 +832,16 @@ int main() {
         printf("São José vence em PIB\n");
     }
 
-    printf("Blumenau tem densidade populacional de: %d\n", densidade_populacional_B3);
-    printf("São José  tem densidade populacional de: %d\n", densidade_populacional_B4);
+    printf("Blumenau tem densidade populacional de: %f\n", densidade_populacional_B3);
+    printf("São José  tem densidade populacional de: %f\n", densidade_populacional_B4);
     if (densidade_populacional_B3 < densidade_populacional_B4 ){
         printf("Blumenau vence em densidade populacional\n");
     } else{
         printf("São José  vence densidade populacional\n");
     }
 
-    printf("Blumenau tem PIB per capita de: %d\n", pib_percapita_B3);
-    printf("São José  tem PIB per capita de: %d\n", pib_percapita_B4);
+    printf("Blumenau tem PIB per capita de: %f\n", pib_percapita_B3);
+    printf("São José  tem PIB per capita de: %f\n", pib_percapita_B4);
     if (pib_percapita_B3 > pib_percapita_B4){
         printf("Blumenau vence em PIB per capita\n");
     } else{
@@ -817,16 +882,16 @@ int main() {
         printf("Caxias do Sul vence em PIB\n");
     }
 
-    printf("Porto Alegre tem densidade populacional de: %d\n", densidade_populacional_C1);
-    printf("Caxias do Sul  tem densidade populacional de: %d\n", densidade_populacional_C2);
+    printf("Porto Alegre tem densidade populacional de: %f\n", densidade_populacional_C1);
+    printf("Caxias do Sul  tem densidade populacional de: %f\n", densidade_populacional_C2);
     if (densidade_populacional_C1 < densidade_populacional_C2 ){
         printf("Porto Alegre vence em densidade populacional\n");
     } else{
         printf("Caxias do Sul  vence densidade populacional\n");
     }
 
-    printf("Porto Alegre tem PIB per capita de: %d\n", pib_percapita_C1);
-    printf("Caxias do Sul  tem PIB per capita de: %d\n", pib_percapita_C2);
+    printf("Porto Alegre tem PIB per capita de: %f\n", pib_percapita_C1);
+    printf("Caxias do Sul  tem PIB per capita de: %f\n", pib_percapita_C2);
     if (pib_percapita_C1 > pib_percapita_C2){
         printf("Porto Alegre vence em PIB per capita\n");
     } else{
@@ -867,16 +932,16 @@ int main() {
         printf("Pelotas vence em PIB\n");
     }
 
-    printf("Canoas tem densidade populacional de: %d\n", densidade_populacional_C3);
-    printf("Pelotas  tem densidade populacional de: %d\n", densidade_populacional_C4);
+    printf("Canoas tem densidade populacional de: %f\n", densidade_populacional_C3);
+    printf("Pelotas  tem densidade populacional de: %f\n", densidade_populacional_C4);
     if (densidade_populacional_C3 < densidade_populacional_C4 ){
         printf("Canoas vence em densidade populacional\n");
     } else{
         printf("Pelotas  vence densidade populacional\n");
     }
 
-    printf("Canoas tem PIB per capita de: %d\n", pib_percapita_C3);
-    printf("Pelotas  tem PIB per capita de: %d\n", pib_percapita_C4);
+    printf("Canoas tem PIB per capita de: %f\n", pib_percapita_C3);
+    printf("Pelotas  tem PIB per capita de: %f\n", pib_percapita_C4);
     if (pib_percapita_C3 > pib_percapita_C4){
         printf("Canoas vence em PIB per capita\n");
     } else{
@@ -917,16 +982,16 @@ int main() {
         printf("São Gonçalo vence em PIB\n");
     }
 
-    printf("Rio de Janeiro tem densidade populacional de: %d\n", densidade_populacional_D1);
-    printf("São Gonçalo  tem densidade populacional de: %d\n", densidade_populacional_D2);
+    printf("Rio de Janeiro tem densidade populacional de: %f\n", densidade_populacional_D1);
+    printf("São Gonçalo  tem densidade populacional de: %f\n", densidade_populacional_D2);
     if (densidade_populacional_D1 < densidade_populacional_D2 ){
         printf("Rio de Janeiro vence em densidade populacional\n");
     } else{
         printf("São Gonçalo  vence densidade populacional\n");
     }
 
-    printf("Rio de Janeiro tem PIB per capita de: %d\n", pib_percapita_D1);
-    printf("São Gonçalo  tem PIB per capita de: %d\n", pib_percapita_D2);
+    printf("Rio de Janeiro tem PIB per capita de: %f\n", pib_percapita_D1);
+    printf("São Gonçalo  tem PIB per capita de: %f\n", pib_percapita_D2);
     if (pib_percapita_D1 > pib_percapita_D2){
         printf("Rio de Janeiro vence em PIB per capita\n");
     } else{
@@ -967,16 +1032,16 @@ int main() {
         printf("Nova Iguaçu vence em PIB\n");
     }
 
-    printf("Duque de Caxias tem densidade populacional de: %d\n", densidade_populacional_D3);
-    printf("Nova Iguaçu  tem densidade populacional de: %d\n", densidade_populacional_D4);
+    printf("Duque de Caxias tem densidade populacional de: %f\n", densidade_populacional_D3);
+    printf("Nova Iguaçu  tem densidade populacional de: %f\n", densidade_populacional_D4);
     if (densidade_populacional_D3  < densidade_populacional_D4 ){
         printf("Duque de Caxias vence em densidade populacional\n");
     } else{
         printf("Nova Iguaçu  vence densidade populacional\n");
     }
 
-    printf("Duque de Caxias tem PIB per capita de: %d\n", pib_percapita_D3 );
-    printf("Nova Iguaçu  tem PIB per capita de: %d\n", pib_percapita_D4);
+    printf("Duque de Caxias tem PIB per capita de: %f\n", pib_percapita_D3 );
+    printf("Nova Iguaçu  tem PIB per capita de: %f\n", pib_percapita_D4);
     if (pib_percapita_D3 > pib_percapita_D4){
         printf("Duque de Caxias vence em PIB per capita\n");
     } else{
@@ -1017,20 +1082,20 @@ int main() {
         printf("Londrina vence em PIB\n");
     }
 
-    printf("Curitiba tem densidade populacional de: %d\n", densidade_populacional_E1);
-    printf("Londrina  tem densidade populacional de: %d\n", densidade_populacional_E2);
+    printf("Curitiba tem densidade populacional de: %f\n", densidade_populacional_E1);
+    printf("Londrina tem densidade populacional de: %f\n", densidade_populacional_E2);
     if (densidade_populacional_E1  < densidade_populacional_E2 ){
         printf("Curitiba vence em densidade populacional\n");
     } else{
-        printf("Londrina  vence densidade populacional\n");
+        printf("Londrina vence densidade populacional\n");
     }
 
-    printf("Curitiba tem PIB per capita de: %d\n", pib_percapita_E1 );
-    printf("Londrina  tem PIB per capita de: %d\n", pib_percapita_E2);
+    printf("Curitiba tem PIB per capita de: %f\n", pib_percapita_E1 );
+    printf("Londrina tem PIB per capita de: %f\n", pib_percapita_E2);
     if (pib_percapita_E1 > pib_percapita_E2){
         printf("Curitiba vence em PIB per capita\n");
     } else{
-        printf("Londrina  vence em PIB per capita\n");
+        printf("Londrina vence em PIB per capita\n");
     } 
 
     printf("Comparação entre Maringa e Ponta Grossa\n");
@@ -1067,16 +1132,16 @@ int main() {
         printf("Ponta Grossa vence em PIB\n");
     }
 
-    printf("Maringa tem densidade populacional de: %d\n", densidade_populacional_E3);
-    printf("Ponta Grossa  tem densidade populacional de: %d\n", densidade_populacional_E4);
+    printf("Maringa tem densidade populacional de: %f\n", densidade_populacional_E3);
+    printf("Ponta Grossa  tem densidade populacional de: %f\n", densidade_populacional_E4);
     if (densidade_populacional_E3  < densidade_populacional_E4 ){
         printf("Maringa vence em densidade populacional\n");
     } else{
         printf("Ponta Grossa vence densidade populacional\n");
     }
 
-    printf("Maringa tem PIB per capita de: %d\n", pib_percapita_E3 );
-    printf("Ponta Grossa  tem PIB per capita de: %d\n", pib_percapita_E4);
+    printf("Maringa tem PIB per capita de: %f\n", pib_percapita_E3 );
+    printf("Ponta Grossa  tem PIB per capita de: %f\n", pib_percapita_E4);
     if (pib_percapita_E3 > pib_percapita_E4){
         printf("Maringa vence em PIB per capita\n");
     } else{
@@ -1117,16 +1182,16 @@ int main() {
         printf("Uberlandia vence em PIB\n");
     }
 
-    printf("Belo Horizonte tem densidade populacional de: %d\n", densidade_populacional_F1);
-    printf("Uberlandia  tem densidade populacional de: %d\n", densidade_populacional_F2);
+    printf("Belo Horizonte tem densidade populacional de: %f\n", densidade_populacional_F1);
+    printf("Uberlandia tem densidade populacional de: %f\n", densidade_populacional_F2);
     if (densidade_populacional_F1  < densidade_populacional_F2 ){
         printf("Belo Horizonte vence em densidade populacional\n");
     } else{
         printf("Uberlandia vence densidade populacional\n");
     }
 
-    printf("Belo Horizonte tem PIB per capita de: %d\n", pib_percapita_F1 );
-    printf("Uberlandia  tem PIB per capita de: %d\n", pib_percapita_F2);
+    printf("Belo Horizonte tem PIB per capita de: %f\n", pib_percapita_F1 );
+    printf("Uberlandia tem PIB per capita de: %f\n", pib_percapita_F2);
     if (pib_percapita_F1 > pib_percapita_F2){
         printf("Belo Horizonte vence em PIB per capita\n");
     } else{
@@ -1167,16 +1232,16 @@ int main() {
         printf("Juiz de Fora vence em PIB\n");
     }
 
-    printf("Contagem tem densidade populacional de: %d\n", densidade_populacional_F3);
-    printf("Juiz de Fora  tem densidade populacional de: %d\n", densidade_populacional_F4);
+    printf("Contagem tem densidade populacional de: %f\n", densidade_populacional_F3);
+    printf("Juiz de Fora  tem densidade populacional de: %f\n", densidade_populacional_F4);
     if (densidade_populacional_F3  < densidade_populacional_F4 ){
         printf("Contagem vence em densidade populacional\n");
     } else{
         printf("Juiz de Fora vence densidade populacional\n");
     }
 
-    printf("Contagem tem PIB per capita de: %d\n", pib_percapita_F3 );
-    printf("Juiz de Fora  tem PIB per capita de: %d\n", pib_percapita_F4);
+    printf("Contagem tem PIB per capita de: %f\n", pib_percapita_F3 );
+    printf("Juiz de Fora  tem PIB per capita de: %f\n", pib_percapita_F4);
     if (pib_percapita_F3 > pib_percapita_F4){
         printf("Contagem vence em PIB per capita\n");
     } else{
@@ -1217,16 +1282,16 @@ int main() {
         printf("Itacoatiara vence em PIB\n");
     }
 
-    printf("Manaus tem densidade populacional de: %d\n", densidade_populacional_G1);
-    printf("Itacoatiara  tem densidade populacional de: %d\n", densidade_populacional_G2);
+    printf("Manaus tem densidade populacional de: %f\n", densidade_populacional_G1);
+    printf("Itacoatiara  tem densidade populacional de: %f\n", densidade_populacional_G2);
     if (densidade_populacional_G1  < densidade_populacional_G2 ){
         printf("Manaus vence em densidade populacional\n");
     } else{
         printf("Itacoatiara vence densidade populacional\n");
     }
 
-    printf("Manaus tem PIB per capita de: %d\n", pib_percapita_G1 );
-    printf("Itacoatiara  tem PIB per capita de: %d\n", pib_percapita_G2);
+    printf("Manaus tem PIB per capita de: %f\n", pib_percapita_G1 );
+    printf("Itacoatiara tem PIB per capita de: %f\n", pib_percapita_G2);
     if (pib_percapita_G1 > pib_percapita_G2){
         printf("Manaus vence em PIB per capita\n");
     } else{
@@ -1267,16 +1332,16 @@ int main() {
         printf("Parintins vence em PIB\n");
     }
 
-    printf("Manacapuru tem densidade populacional de: %d\n", densidade_populacional_G3);
-    printf("Parintins  tem densidade populacional de: %d\n", densidade_populacional_G4);
+    printf("Manacapuru tem densidade populacional de: %f\n", densidade_populacional_G3);
+    printf("Parintins tem densidade populacional de: %f\n", densidade_populacional_G4);
     if (densidade_populacional_G3  < densidade_populacional_G4 ){
         printf("Manacapuru vence em densidade populacional\n");
     } else{
         printf("Parintins vence densidade populacional\n");
     }
 
-    printf("Manacapuru tem PIB per capita de: %d\n", pib_percapita_G3 );
-    printf("Parintins  tem PIB per capita de: %d\n", pib_percapita_G4);
+    printf("Manacapuru tem PIB per capita de: %f\n", pib_percapita_G3 );
+    printf("Parintins tem PIB per capita de: %f\n", pib_percapita_G4);
     if (pib_percapita_G3 > pib_percapita_G4){
         printf("Manacapuru vence em PIB per capita\n");
     } else{
@@ -1317,16 +1382,16 @@ int main() {
         printf("Feira de Santana vence em PIB\n");
     }
 
-    printf("Salvador tem densidade populacional de: %d\n", densidade_populacional_H1);
-    printf("Feira de Santana  tem densidade populacional de: %d\n", densidade_populacional_H2);
+    printf("Salvador tem densidade populacional de: %f\n", densidade_populacional_H1);
+    printf("Feira de Santana tem densidade populacional de: %f\n", densidade_populacional_H2);
     if (densidade_populacional_H1  < densidade_populacional_H2 ){
         printf("Salvador vence em densidade populacional\n");
     } else{
         printf("Feira de Santana vence densidade populacional\n");
     }
 
-    printf("Salvador tem PIB per capita de: %d\n", pib_percapita_H1 );
-    printf("Feira de Santana  tem PIB per capita de: %d\n", pib_percapita_H2);
+    printf("Salvador tem PIB per capita de: %f\n", pib_percapita_H1 );
+    printf("Feira de Santana  tem PIB per capita de: %f\n", pib_percapita_H2);
     if (pib_percapita_H1 > pib_percapita_H2){
         printf("Salvador vence em PIB per capita\n");
     } else{
@@ -1367,16 +1432,16 @@ int main() {
         printf("Camacari vence em PIB\n");
     }
 
-    printf("Vitória da Conquista tem densidade populacional de: %d\n", densidade_populacional_H1);
-    printf("Camacari  tem densidade populacional de: %d\n", densidade_populacional_H2);
+    printf("Vitória da Conquista tem densidade populacional de: %f\n", densidade_populacional_H1);
+    printf("Camacari tem densidade populacional de: %f\n", densidade_populacional_H2);
     if (densidade_populacional_H1  < densidade_populacional_H2 ){
         printf("Vitória da Conquista vence em densidade populacional\n");
     } else{
         printf("Camacari vence densidade populacional\n");
     }
 
-    printf("Vitória da Conquista tem PIB per capita de: %d\n", pib_percapita_H1 );
-    printf("Camacari  tem PIB per capita de: %d\n", pib_percapita_H2);
+    printf("Vitória da Conquista tem PIB per capita de: %f\n", pib_percapita_H1 );
+    printf("Camacari tem PIB per capita de: %f\n", pib_percapita_H2);
     if (pib_percapita_H1 > pib_percapita_H2){
         printf("Salvador vence em PIB per capita\n");
     } else{
