@@ -9,6 +9,231 @@ int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     // Você pode utilizar o código do primeiro desafio
 
+    char A1_Sao_Paulo_SP[70]; 
+    char A2_Campinas_SP[70];
+    char A3_Ribeirao_Preto_SP[70];
+    char A4_SaoJose_dos_Campos_SP[70];
+    char B1_Florianopolis_SC[70];
+    char B2_Joinville_SC[70];
+    char B3_Blumenau_SC[70];
+    char B4_Sao_Jose_SC[70];
+    char C1_Porto_Alegre_RS[70];
+    char C2_Caxias_do_Sul_RS[70];
+    char C3_Canoas_RS[70];
+    char C4_Pelotas_RS[70];
+    char D1_Rio_de_Janeiro_RJ[70];
+    char D2_Sao_Goncalo_RJ[70];
+    char D3_Duque_de_Caxias_RJ[70];
+    char D4_Nova_Iguacu_RJ[70];
+    char E1_Curitiba_PR[70];
+    char E2_Londrina_PR[70];
+    char E3_Maringa_PR[70];
+    char E4_Ponta_Grossa_PR[70];
+    char F1_Belo_Horizonte_MG[70];
+    char F2_Uberlandia_MG[70];
+    char F3_Contagem_MG[70];
+    char F4_Juiz_de_fora_MG[70];
+    char G1_Manaus_AM[70];
+    char G2_Itacoatiara_AM[70];
+    char G3_Manacapuru_AM[70];
+    char G4_Parintins_AM[70];
+    char H1_Salvador_BA[70];
+    char H2_Feira_de_Santana_BA[70];
+    char H3_Vitoria_da_Conquista_BA[70];
+    char H4_Camacari_BA[70];
+    int numero_de_pontos_turisticos_A1;
+    int numero_de_pontos_turisticos_A2;
+    int numero_de_pontos_turisticos_A3;
+    int numero_de_pontos_turisticos_A4;
+    int numero_de_pontos_turisticos_B1;
+    int numero_de_pontos_turisticos_B2;
+    int numero_de_pontos_turisticos_B3;
+    int numero_de_pontos_turisticos_B4;
+    int numero_de_pontos_turisticos_C1;
+    int numero_de_pontos_turisticos_C2;
+    int numero_de_pontos_turisticos_C3;
+    int numero_de_pontos_turisticos_C4;
+    int numero_de_pontos_turisticos_D1;
+    int numero_de_pontos_turisticos_D2;
+    int numero_de_pontos_turisticos_D3;
+    int numero_de_pontos_turisticos_D4;
+    int numero_de_pontos_turisticos_E1;
+    int numero_de_pontos_turisticos_E2;
+    int numero_de_pontos_turisticos_E3;
+    int numero_de_pontos_turisticos_E4;
+    int numero_de_pontos_turisticos_F1;
+    int numero_de_pontos_turisticos_F2;
+    int numero_de_pontos_turisticos_F3;
+    int numero_de_pontos_turisticos_F4;
+    int numero_de_pontos_turisticos_G1;
+    int numero_de_pontos_turisticos_G2;
+    int numero_de_pontos_turisticos_G3;
+    int numero_de_pontos_turisticos_G4;
+    int numero_de_pontos_turisticos_H1;
+    int numero_de_pontos_turisticos_H2;
+    int numero_de_pontos_turisticos_H3;
+    int numero_de_pontos_turisticos_H4;
+    int populacao_A1;
+    int populacao_A2;
+    int populacao_A3;
+    int populacao_A4;
+    int populacao_B1;
+    int populacao_B2;
+    int populacao_B3;
+    int populacao_B4;
+    int populacao_C1;
+    int populacao_C2;
+    int populacao_C3;
+    int populacao_C4;
+    int populacao_D1;
+    int populacao_D2;
+    int populacao_D3;
+    int populacao_D4;
+    int populacao_E1;
+    int populacao_E2;
+    int populacao_E3;
+    int populacao_E4;
+    int populacao_F1;
+    int populacao_F2;
+    int populacao_F3;
+    int populacao_F4;
+    int populacao_G1;
+    int populacao_G2;
+    int populacao_G3;
+    int populacao_G4;
+    int populacao_H1;
+    int populacao_H2;
+    int populacao_H3;
+    int populacao_H4;
+    int area_A1;
+    int area_A2;
+    int area_A3;
+    int area_A4;
+    int area_B1;
+    int area_B2;
+    int area_B3;
+    int area_B4;
+    int area_C1;
+    int area_C2;
+    int area_C3;
+    int area_C4;
+    int area_D1;
+    int area_D2;
+    int area_D3;
+    int area_D4;
+    int area_E1;
+    int area_E2;
+    int area_E3;
+    int area_E4;
+    int area_F1;
+    int area_F2;
+    int area_F3;
+    int area_F4;
+    int area_G1;
+    int area_G2;
+    int area_G3;
+    int area_G4;
+    int area_H1;
+    int area_H2;
+    int area_H3;
+    int area_H4;
+    int PIB_A1;
+    int PIB_A2;
+    int PIB_A3;
+    int PIB_A4;
+    int PIB_B1;
+    int PIB_B2;
+    int PIB_B3;
+    int PIB_B4;
+    int PIB_C1;
+    int PIB_C2;
+    int PIB_C3;
+    int PIB_C4;
+    int PIB_D1;
+    int PIB_D2;
+    int PIB_D3;
+    int PIB_D4;
+    int PIB_E1;
+    int PIB_E2;
+    int PIB_E3;
+    int PIB_E4;
+    int PIB_F1;
+    int PIB_F2;
+    int PIB_F3;
+    int PIB_F4;
+    int PIB_G1;
+    int PIB_G2;
+    int PIB_G3;
+    int PIB_G4;
+    int PIB_H1;
+    int PIB_H2;
+    int PIB_H3;
+    int PIB_H4;
+    double densidade_populacional_A1;
+    double densidade_populacional_A2;
+    double densidade_populacional_A3;
+    double densidade_populacional_A4;
+    double densidade_populacional_B1;
+    double densidade_populacional_B2;
+    double densidade_populacional_B3;
+    double densidade_populacional_B4;
+    double densidade_populacional_C1;
+    double densidade_populacional_C2;
+    double densidade_populacional_C3;
+    double densidade_populacional_C4;
+    double densidade_populacional_D1;
+    double densidade_populacional_D2;
+    double densidade_populacional_D3;
+    double densidade_populacional_D4;
+    double densidade_populacional_E1;
+    double densidade_populacional_E2;
+    double densidade_populacional_E3;
+    double densidade_populacional_E4;
+    double densidade_populacional_F1;
+    double densidade_populacional_F2;
+    double densidade_populacional_F3;
+    double densidade_populacional_F4;
+    double densidade_populacional_G1;
+    double densidade_populacional_G2;
+    double densidade_populacional_G3;
+    double densidade_populacional_G4;
+    double densidade_populacional_H1;
+    double densidade_populacional_H2;
+    double densidade_populacional_H3;
+    double densidade_populacional_H4;
+    double pib_percapita_A1;
+    double pib_percapita_A2;
+    double pib_percapita_A3;
+    double pib_percapita_A4;
+    double pib_percapita_B1;
+    double pib_percapita_B2;
+    double pib_percapita_B3;
+    double pib_percapita_B4;
+    double pib_percapita_C1;
+    double pib_percapita_C2;
+    double pib_percapita_C3;
+    double pib_percapita_C4;
+    double pib_percapita_D1;
+    double pib_percapita_D2;
+    double pib_percapita_D3;
+    double pib_percapita_D4;
+    double pib_percapita_E1;
+    double pib_percapita_E2;
+    double pib_percapita_E3;
+    double pib_percapita_E4;
+    double pib_percapita_F1;
+    double pib_percapita_F2;
+    double pib_percapita_F3;
+    double pib_percapita_F4;
+    double pib_percapita_G1;
+    double pib_percapita_G2;
+    double pib_percapita_G3;
+    double pib_percapita_G4;
+    double pib_percapita_H1;
+    double pib_percapita_H2;
+    double pib_percapita_H3;
+    double pib_percapita_H4;
+
     
     // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
@@ -21,23 +246,758 @@ int main() {
     // 
     // (Repita para cada propriedade)
 
+    printf("A1 São Paulo - SP\n", A1_Sao_Paulo_SP);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_A1);
+    scanf("%d", &numero_de_pontos_turisticos_A1);
+    printf("Digite a quantidade de população:\n", populacao_A1);
+    scanf("%d", &populacao_A1);
+    printf("Digite a área:\n", area_A1);
+    scanf("%d", &area_A1);
+    printf("Digite o PIB:\n", PIB_A1);
+    scanf("%d", &PIB_A1);
+
+    printf("A2 Campinas - SP\n", A2_Campinas_SP);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_A2);
+    scanf("%d", &numero_de_pontos_turisticos_A2);
+    printf("Digite a quantidade de população:\n", populacao_A2);
+    scanf("%d", &populacao_A2);
+    printf("Digite a área:\n", area_A2);
+    scanf("%d", &area_A2);
+    printf("Digite o PIB:\n", PIB_A2);
+    scanf("%d", &PIB_A2);
+
+    printf("A3 Ribeirão Preto - SP\n", A3_Ribeirao_Preto_SP);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_A3);
+    scanf("%d", &numero_de_pontos_turisticos_A3);
+    printf("Digite a quantidade de população:\n", populacao_A3);
+    scanf("%d", &populacao_A3);
+    printf("Digite a área:\n", area_A3);
+    scanf("%d", &area_A3);
+    printf("Digite o PIB:\n", PIB_A3);
+    scanf("%d", &PIB_A3);
+
+    printf("A4 São José dos Campos - SP\n", A4_SaoJose_dos_Campos_SP);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_A4);
+    scanf("%d", &numero_de_pontos_turisticos_A4);
+    printf("Digite a quantidade de população:\n", populacao_A4);
+    scanf("%d", &populacao_A4);
+    printf("Digite a área:\n", area_A4);
+    scanf("%d", &area_A4);
+    printf("Digite o PIB:\n", PIB_A4);
+    scanf("%d", &PIB_A4);
+
+    printf("B1 Florianópolis - SC\n", B1_Florianopolis_SC);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_B1);
+    scanf("%d", &numero_de_pontos_turisticos_B1);
+    printf("Digite a quantidade de população:\n", populacao_B1);
+    scanf("%d", &populacao_B1);
+    printf("Digite a área:\n", area_B1);
+    scanf("%d", &area_B1);
+    printf("Digite o PIB:\n", PIB_B1);
+    scanf("%d", &PIB_B1);
+
+    printf("B2 Joinville - SC\n", B2_Joinville_SC);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_B2);
+    scanf("%d", &numero_de_pontos_turisticos_B2);
+    printf("Digite a quantidade de população:\n", populacao_B2);
+    scanf("%d", &populacao_B2);
+    printf("Digite a área:\n", area_B2);
+    scanf("%d", &area_B2);
+    printf("Digite o PIB:\n", PIB_B2);
+    scanf("%d", &PIB_B2);
+
+    printf("B3 Blumenau - SC\n", B3_Blumenau_SC);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_B3);
+    scanf("%d", &numero_de_pontos_turisticos_B3);
+    printf("Digite a quantidade de população:\n", populacao_B3);
+    scanf("%d", &populacao_B3);
+    printf("Digite a área:\n", area_B3);
+    scanf("%d", &area_B3);
+    printf("Digite o PIB:\n", PIB_B3);
+    scanf("%d", &PIB_B3);
+
+    printf("B4 São José - SC\n", B4_Sao_Jose_SC);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_B4);
+    scanf("%d", &numero_de_pontos_turisticos_B4);
+    printf("Digite a quantidade de população:\n", populacao_B4);
+    scanf("%d", &populacao_B4);
+    printf("Digite a área:\n", area_B4);
+    scanf("%d", &area_B4);
+    printf("Digite o PIB:\n", PIB_B4);
+    scanf("%d", &PIB_B4);
+
+    printf("C1 Porto Alegre - RS\n", C1_Porto_Alegre_RS);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_C1);
+    scanf("%d", &numero_de_pontos_turisticos_C1);
+    printf("Digite a quantidade de população:\n", populacao_C1);
+    scanf("%d", &populacao_C1);
+    printf("Digite a área:\n", area_C1);
+    scanf("%d", &area_C1);
+    printf("Digite o PIB:\n", PIB_C1);
+    scanf("%d", &PIB_C1);
+
+    printf("C2 Caxias do Sul - RS\n", C2_Caxias_do_Sul_RS);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_C2);
+    scanf("%d", &numero_de_pontos_turisticos_C2);
+    printf("Digite a quantidade de população:\n", populacao_C2);
+    scanf("%d", &populacao_C2);
+    printf("Digite a área:\n", area_C2);
+    scanf("%d", &area_C2);
+    printf("Digite o PIB:\n", PIB_C2);
+    scanf("%d", &PIB_C2);
+
+    printf("C3 Canoas - RS\n", C3_Canoas_RS);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_C3);
+    scanf("%d", &numero_de_pontos_turisticos_C3);
+    printf("Digite a quantidade de população:\n", populacao_C3);
+    scanf("%d", &populacao_C3);
+    printf("Digite a área:\n", area_C3);
+    scanf("%d", &area_C3);
+    printf("Digite o PIB:\n", PIB_C3);
+    scanf("%d", &PIB_C3);
+
+    printf("C3 Pelotas - RS\n", C4_Pelotas_RS);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_C4);
+    scanf("%d", &numero_de_pontos_turisticos_C4);
+    printf("Digite a quantidade de população:\n", populacao_C4);
+    scanf("%d", &populacao_C4);
+    printf("Digite a área:\n", area_C4);
+    scanf("%d", &area_C4);
+    printf("Digite o PIB:\n", PIB_C4);
+    scanf("%d", &PIB_C4);
+
+    printf("D1 Rio de Janeiro - RJ\n", D1_Rio_de_Janeiro_RJ);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_D1);
+    scanf("%d", &numero_de_pontos_turisticos_D1);
+    printf("Digite a quantidade de população:\n", populacao_D1);
+    scanf("%d", &populacao_D1);
+    printf("Digite a área:\n", area_D1);
+    scanf("%d", &area_D1);
+    printf("Digite o PIB:\n", PIB_D1);
+    scanf("%d", &PIB_D1);
+
+    printf("D2 São Gonçalo - RJ\n", D2_Sao_Goncalo_RJ);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_D2);
+    scanf("%d", &numero_de_pontos_turisticos_D2);
+    printf("Digite a quantidade de população:\n", populacao_D2);
+    scanf("%d", &populacao_D2);
+    printf("Digite a área:\n", area_D2);
+    scanf("%d", &area_D2);
+    printf("Digite o PIB:\n", PIB_D2);
+    scanf("%d", &PIB_D2);
+
+    printf("D3 Duque de Caixias - RJ\n", D3_Duque_de_Caxias_RJ);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_D3);
+    scanf("%d", &numero_de_pontos_turisticos_D3);
+    printf("Digite a quantidade de população:\n", populacao_D3);
+    scanf("%d", &populacao_D3);
+    printf("Digite a área:\n", area_D3);
+    scanf("%d", &area_D3);
+    printf("Digite o PIB:\n", PIB_D3);
+    scanf("%d", &PIB_D3);
+
+    printf("D4 Nova Iguaçu - RJ\n", D4_Nova_Iguacu_RJ);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_D4);
+    scanf("%d", &numero_de_pontos_turisticos_D4);
+    printf("Digite a quantidade de população:\n", populacao_D4);
+    scanf("%d", &populacao_D4);
+    printf("Digite a área:\n", area_D4);
+    scanf("%d", &area_D4);
+    printf("Digite o PIB:\n", PIB_D4);
+    scanf("%d", &PIB_D4);
+
+    printf("E1 Curitiba - PR\n", E1_Curitiba_PR);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_E1);
+    scanf("%d", &numero_de_pontos_turisticos_E1);
+    printf("Digite a quantidade de população:\n", populacao_E1);
+    scanf("%d", &populacao_E1);
+    printf("Digite a área:\n", area_E1);
+    scanf("%d", &area_E1);
+    printf("Digite o PIB:\n", PIB_E1);
+    scanf("%d", &PIB_E1);
+
+    printf("E2 Londria - PR\n", E2_Londrina_PR);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_E2);
+    scanf("%d", &numero_de_pontos_turisticos_E2);
+    printf("Digite a quantidade de população:\n", populacao_E2);
+    scanf("%d", &populacao_E2);
+    printf("Digite a área:\n", area_E2);
+    scanf("%d", &area_E2);
+    printf("Digite o PIB:\n", PIB_E2);
+    scanf("%d", &PIB_E2);
+
+    printf("E3 Maringá - PR\n", E3_Maringa_PR);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_E3);
+    scanf("%d", &numero_de_pontos_turisticos_E3);
+    printf("Digite a quantidade de população:\n", populacao_E3);
+    scanf("%d", &populacao_E3);
+    printf("Digite a área:\n", area_E3);
+    scanf("%d", &area_E3);
+    printf("Digite o PIB:\n", PIB_E3);
+    scanf("%d", &PIB_E3);
+
+    printf("E4 Ponta Grossa - PR\n", E4_Ponta_Grossa_PR);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_E4);
+    scanf("%d", &numero_de_pontos_turisticos_E4);
+    printf("Digite a quantidade de população:\n", populacao_E4);
+    scanf("%d", &populacao_E4);
+    printf("Digite a área:\n", area_E4);
+    scanf("%d", &area_E4);
+    printf("Digite o PIB:\n", PIB_E4);
+    scanf("%d", &PIB_E4);
+
+    printf("F1 Belo Horizonte - MG\n", F1_Belo_Horizonte_MG);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_F1);
+    scanf("%d", &numero_de_pontos_turisticos_F1);
+    printf("Digite a quantidade de população:\n", populacao_F1);
+    scanf("%d", &populacao_F1);
+    printf("Digite a área:\n", area_F1);
+    scanf("%d", &area_F1);
+    printf("Digite o PIB:\n", PIB_F1);
+    scanf("%d", &PIB_F1);
+
+    printf("F2 Uberlândia- MG\n", F2_Uberlandia_MG);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_F2);
+    scanf("%d", &numero_de_pontos_turisticos_F2);
+    printf("Digite a quantidade de população:\n", populacao_F2);
+    scanf("%d", &populacao_F2);
+    printf("Digite a área:\n", area_F2);
+    scanf("%d", &area_F2);
+    printf("Digite o PIB:\n", PIB_F2);
+    scanf("%d", &PIB_F2);
+
+    printf("F3 Contagem - MG\n", F3_Contagem_MG);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_F3);
+    scanf("%d", &numero_de_pontos_turisticos_F3);
+    printf("Digite a quantidade de população:\n", populacao_F3);
+    scanf("%d", &populacao_F3);
+    printf("Digite a área:\n", area_F3);
+    scanf("%d", &area_F3);
+    printf("Digite o PIB:\n", PIB_F3);
+    scanf("%d", &PIB_F3);
+
+    printf("F4 Juíz de Fora - MG\n", F4_Juiz_de_fora_MG);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_F4);
+    scanf("%d", &numero_de_pontos_turisticos_F4);
+    printf("Digite a quantidade de população:\n", populacao_F4);
+    scanf("%d", &populacao_F4);
+    printf("Digite a área:\n", area_F4);
+    scanf("%d", &area_F4);
+    printf("Digite o PIB:\n", PIB_F4);
+    scanf("%d", &PIB_F4);
+    
+    printf("G1 Manaus - AM\n", G1_Manaus_AM);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_G1);
+    scanf("%d", &numero_de_pontos_turisticos_G1);
+    printf("Digite a quantidade de população:\n", populacao_G1);
+    scanf("%d", &populacao_G1);
+    printf("Digite a área:\n", area_G1);
+    scanf("%d", &area_G1);
+    printf("Digite o PIB:\n", PIB_G1);
+    scanf("%d", &PIB_G1);
+
+    printf("G2 Itacoatiara - AM\n", G2_Itacoatiara_AM);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_G2);
+    scanf("%d", &numero_de_pontos_turisticos_G2);
+    printf("Digite a quantidade de população:\n", populacao_G2);
+    scanf("%d", &populacao_G2);
+    printf("Digite a área: \n", area_G2);
+    scanf("%d", &area_G2);
+    printf("Digite o PIB:\n", PIB_G2);
+    scanf("%d", &PIB_G2);
+
+    printf("G3 Manacapuru - AM\n", G3_Manacapuru_AM);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_G3);
+    scanf("%d", &numero_de_pontos_turisticos_G3);
+    printf("Digite a quantidade de população:\n", populacao_G3);
+    scanf("%d", &populacao_G3);
+    printf("Digite a área:\n", area_G3);
+    scanf("%d", &area_G3);
+    printf("Digite o PIB:\n", PIB_G3);
+    scanf("%d", &PIB_G3);
+
+    printf("G4 Parintins - AM\n", G4_Parintins_AM);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_G4);
+    scanf("%d", &numero_de_pontos_turisticos_G4);
+    printf("Digite a quantidade de população:\n", populacao_G4);
+    scanf("%d", &populacao_G4);
+    printf("Digite a área:\n", area_G4);
+    scanf("%d", &area_G4);
+    printf("Digite o PIB:\n", PIB_G4);
+    scanf("%d", &PIB_G4);
+
+    printf("H1 Salvador - BA\n", H1_Salvador_BA);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_H1);
+    scanf("%d", &numero_de_pontos_turisticos_H1);
+    printf("Digite a quantidade de população:\n", populacao_H1);
+    scanf("%d", &populacao_H1);
+    printf("Digite a área:\n", area_H1);
+    scanf("%d", &area_H1);
+    printf("Digite o PIB:\n", PIB_H1);
+    scanf("%d", &PIB_H1);
+
+    printf("H2 Feira de Santana - BA\n", H2_Feira_de_Santana_BA);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_H2);
+    scanf("%d", &numero_de_pontos_turisticos_H2);
+    printf("Digite a quantidade de população:\n", populacao_H2);
+    scanf("%d", &populacao_H2);
+    printf("Digite a área:\n", area_H2);
+    scanf("%d", &area_H2);
+    printf("Digite o PIB:\n", PIB_H2);
+    scanf("%d", &PIB_H2);
+
+    printf("H3 Vitória da Conquista - BA\n", H3_Vitoria_da_Conquista_BA);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_H3);
+    scanf("%d", &numero_de_pontos_turisticos_H3);
+    printf("Digite a quantidade de população:\n", populacao_H3);
+    scanf("%d", &populacao_H3);
+    printf("Digite a área:\n", area_H3);
+    scanf("%d", &area_H3);
+    printf("Digite o PIB:\n", PIB_H3);
+    scanf("%d", &PIB_H3);
+
+    printf("H4 Camacari - BA\n", H4_Camacari_BA);
+    printf("Digite o nº de pontos turísticos:\n", numero_de_pontos_turisticos_H4);
+    scanf("%d", &numero_de_pontos_turisticos_H4);
+    printf("Digite a quantidade de população:\n", populacao_H4);
+    scanf("%d", &populacao_H4);
+    printf("Digite a área:\n", area_H4);
+    scanf("%d", &area_H4);
+    printf("Digite o PIB:\n", PIB_H4);
+    scanf("%d", &PIB_H4);
+
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-
+    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc;
     // Exemplo:
     // if (populacaoA > populacaoB) {
     //     printf("Cidade 1 tem maior população.\n");
     // } else {
     //     printf("Cidade 2 tem maior população.\n");
-    // }
-
+    // };
     // Exibição dos Resultados:
     // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
+    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo;
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+
+    printf("Comparação entre São Paulo e Campinas\n");
+
+    printf("São Paulo tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A1);
+    printf("Campinas tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A2);
+    if (numero_de_pontos_turisticos_A1 > numero_de_pontos_turisticos_A2 ){
+        printf("São Paulo vence em nº de pontos turísticos\n");
+    } else{
+        printf("Campinas vence em nº de pontos turísticos\n");
+    }
+
+    printf("São Paulo tem de população: %d\n", populacao_A1);
+    printf("Campinas tem de população: %d\n", populacao_A2);
+    if (populacao_A1 > populacao_A2 ){
+        printf("São Paulo vence em quantidade de população\n");
+    } else{
+        printf("Campinas vence em quantidade de população\n");
+    }
+
+    printf("São Paulo tem área de: %d\n", area_A1);
+    printf("Campinas tem área de: %d\n", area_A2);
+    if (area_A1 > area_A2 ){
+        printf("São Paulo vence em área\n");
+    } else{
+        printf("Campinas vence em área\n");
+    }
+
+    printf("São Paulo tem PIB de: %d\n", PIB_A1);
+    printf("Campinas tem PIB de: %d\n", PIB_A2);
+    if (PIB_A1 > PIB_A2 ){
+        printf("São Paulo vence em PIB\n");
+    } else{
+        printf("Campinas vence em PIB\n");
+    }
+
+    printf("São Paulo tem densidade populacional de: %d\n", densidade_populacional_A1);
+    printf("Campinas tem densidade populacional de: %d\n", densidade_populacional_A2);
+    if (densidade_populacional_A1 < densidade_populacional_A2 ){
+        printf("São Paulo vence em densidade populacional\n");
+    } else{
+        printf("Campinas vence densidade populacional\n");
+    }
+
+    printf("São Paulo tem PIB per capita de: %d\n", pib_percapita_A1);
+    printf("Campinas tem PIB per capita de: %d\n", pib_percapita_A2);
+    if (pib_percapita_A1 > pib_percapita_A2 ){
+        printf("São Paulo vence em PIB per capita\n");
+    } else{
+        printf("Campinas vence em PIB per capita\n");
+    }
+
+
+
+    printf("Comparação entre Ribeirão Preto e São José dos Campos\n");
+
+    printf("Ribeirão Preto tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A3);
+    printf("São José dos Campos tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A4);
+    if (numero_de_pontos_turisticos_A3 > numero_de_pontos_turisticos_A4 ){
+        printf("Ribeirão Preto vence em nº de pontos turísticos\n");
+    } else{
+        printf("São José dos Campos vence em nº de pontos turísticos\n");
+    }
+
+    printf("Ribeirão Preto tem de população: %d\n", populacao_A3);
+    printf("São José dos Campos tem de população: %d\n", populacao_A4);
+    if (populacao_A3 > populacao_A4 ){
+        printf("São Paulo vence em quantidade de população\n");
+    } else{
+        printf("Campinas vence em quantidade de população\n");
+    }
+
+    printf("Ribeirão Preto tem área de: %d\n", area_A3);
+    printf("São José dos Campos tem área de: %d\n", area_A4);
+    if (area_A3 > area_A4 ){
+        printf("Ribeirão Preto vence em área\n");
+    } else{
+        printf("São José dos Campos vence em área\n");
+    }
+
+    printf("Ribeirão Preto tem PIB de: %d\n", PIB_A3);
+    printf("São José dos Campos tem PIB de: %d\n", PIB_A4);
+    if (PIB_A3 > PIB_A4 ){
+        printf("Ribeirão Preto vence em PIB\n");
+    } else{
+        printf("São José dos Campos vence em PIB\n");
+    }
+
+    printf("Ribeirão Preto tem densidade populacional de: %d\n", densidade_populacional_A3);
+    printf("São José dos Campos tem densidade populacional de: %d\n", densidade_populacional_A4);
+    if (densidade_populacional_A3 < densidade_populacional_A4 ){
+        printf("Ribeirão Preto vence em densidade populacional\n");
+    } else{
+        printf("São José dos Campos vence densidade populacional\n");
+    }
+
+    printf("Ribeirão Preto tem PIB per capita de: %d\n", pib_percapita_A3);
+    printf("São José dos Campos tem PIB per capita de: %d\n", pib_percapita_A4);
+    if (pib_percapita_A3 > pib_percapita_A4 ){
+        printf("Ribeirão Preto vence em PIB per capita\n");
+    } else{
+        printf("São José dos Campos vence em PIB per capita\n");
+    }
+
+    printf("Comparação entre Florianópolis e Joinville\n");
+
+    printf("Florianópolis tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B1);
+    printf("Joinville dos Campos tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B2);
+    if (numero_de_pontos_turisticos_B1 > numero_de_pontos_turisticos_B2 ){
+        printf("Florianópolis vence em nº de pontos turísticos\n");
+    } else{
+        printf("Joinville vence em nº de pontos turísticos\n");
+    }
+
+    printf("Florianópolis tem de população: %d\n", populacao_B1);
+    printf("Joinville tem de população: %d\n", populacao_B2);
+    if (populacao_B1 > populacao_B2 ){
+        printf("Florianópolis vence em quantidade de população\n");
+    } else{
+        printf("Joinville vence em quantidade de população\n");
+    }
+
+    printf("Florianópolis tem área de: %d\n", area_B1);
+    printf("Joinville tem área de: %d\n", area_B2);
+    if (area_B1 > area_B2 ){
+        printf("Florianópolis vence em área\n");
+    } else{
+        printf("Joinville vence em área\n");
+    }
+
+    printf("Florianópolis tem PIB de: %d\n", PIB_B1);
+    printf("Joinville tem PIB de: %d\n", PIB_B2);
+    if (PIB_B1 > PIB_B2 ){
+        printf("Florianópolis vence em PIB\n");
+    } else{
+        printf("Joinville vence em PIB\n");
+    }
+
+    printf("Florianópolis tem densidade populacional de: %d\n", densidade_populacional_B1);
+    printf("Joinville  tem densidade populacional de: %d\n", densidade_populacional_B2);
+    if (densidade_populacional_B1 < densidade_populacional_B2 ){
+        printf("Florianópolis vence em densidade populacional\n");
+    } else{
+        printf("Joinville  vence densidade populacional\n");
+    }
+
+    printf("Florianópolis tem PIB per capita de: %d\n", pib_percapita_B1);
+    printf("Joinville  tem PIB per capita de: %d\n", pib_percapita_B2);
+    if (pib_percapita_B1 > pib_percapita_B2 ){
+        printf("Florianópolis vence em PIB per capita\n");
+    } else{
+        printf("Joinville  vence em PIB per capita\n");
+    }
+
+    printf("Comparação entre Blumenau e São José\n");
+
+    printf("Blumenau tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B3);
+    printf("São José tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B4);
+    if (numero_de_pontos_turisticos_B3 > numero_de_pontos_turisticos_B4 ){
+        printf("Blumenau vence em nº de pontos turísticos\n");
+    } else{
+        printf("São José vence em nº de pontos turísticos\n");
+    }
+
+    printf("Blumenau tem de população: %d\n", populacao_B3);
+    printf("São José tem de população: %d\n", populacao_B4);
+    if (populacao_B3 > populacao_B4 ){
+        printf("Blumenau vence em quantidade de população\n");
+    } else{
+        printf("São José vence em quantidade de população\n");
+    }
+
+    printf("Blumenau tem área de: %d\n", area_B3);
+    printf("São José tem área de: %d\n", area_B4);
+    if (area_B3 > area_B4 ){
+        printf("Blumenau vence em área\n");
+    } else{
+        printf("São José vence em área\n");
+    }
+
+    printf("Blumenau tem PIB de: %d\n", PIB_B3);
+    printf("São José tem PIB de: %d\n", PIB_B4);
+    if (PIB_B3 > PIB_B4 ){
+        printf("Blumenau vence em PIB\n");
+    } else{
+        printf("São José vence em PIB\n");
+    }
+
+    printf("Blumenau tem densidade populacional de: %d\n", densidade_populacional_B3);
+    printf("São José  tem densidade populacional de: %d\n", densidade_populacional_B4);
+    if (densidade_populacional_B3 < densidade_populacional_B4 ){
+        printf("Blumenau vence em densidade populacional\n");
+    } else{
+        printf("São José  vence densidade populacional\n");
+    }
+
+    printf("Blumenau tem PIB per capita de: %d\n", pib_percapita_B3);
+    printf("São José  tem PIB per capita de: %d\n", pib_percapita_B4);
+    if (pib_percapita_B3 > pib_percapita_B4){
+        printf("Blumenau vence em PIB per capita\n");
+    } else{
+        printf("São José  vence em PIB per capita\n");
+    }
+
+    printf("Comparação entre Porto Alegre e Caxias do Sul\n");
+
+    printf("Porto Alegre tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C1);
+    printf("Caxias do Sul tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C2);
+    if (numero_de_pontos_turisticos_C1 > numero_de_pontos_turisticos_C2 ){
+        printf("Porto Alegre vence em nº de pontos turísticos\n");
+    } else{
+        printf("Caxias do Sul vence em nº de pontos turísticos\n");
+    }
+
+    printf("Porto Alegre tem de população: %d\n", populacao_C1);
+    printf("Caxias do Sul tem de população: %d\n", populacao_C2);
+    if (populacao_C1 > populacao_C2 ){
+        printf("Porto Alegre vence em quantidade de população\n");
+    } else{
+        printf("Caxias do Sul vence em quantidade de população\n");
+    }
+
+    printf("Porto Alegre tem área de: %d\n", area_C1);
+    printf("Caxias do Sul tem área de: %d\n", area_C2);
+    if (area_C1 > area_C2 ){
+        printf("Porto Alegre vence em área\n");
+    } else{
+        printf("Caxias do Sul vence em área\n");
+    }
+
+    printf("Porto Alegre tem PIB de: %d\n", PIB_C1);
+    printf("Caxias do Sul tem PIB de: %d\n", PIB_C2);
+    if (PIB_C1 > PIB_C2 ){
+        printf("Porto Alegre vence em PIB\n");
+    } else{
+        printf("Caxias do Sul vence em PIB\n");
+    }
+
+    printf("Porto Alegre tem densidade populacional de: %d\n", densidade_populacional_C1);
+    printf("Caxias do Sul  tem densidade populacional de: %d\n", densidade_populacional_C2);
+    if (densidade_populacional_C1 < densidade_populacional_C2 ){
+        printf("Porto Alegre vence em densidade populacional\n");
+    } else{
+        printf("Caxias do Sul  vence densidade populacional\n");
+    }
+
+    printf("Porto Alegre tem PIB per capita de: %d\n", pib_percapita_C1);
+    printf("Caxias do Sul  tem PIB per capita de: %d\n", pib_percapita_C2);
+    if (pib_percapita_C1 > pib_percapita_C2){
+        printf("Porto Alegre vence em PIB per capita\n");
+    } else{
+        printf("Caxias do Sul  vence em PIB per capita\n");
+    }
+
+    printf("Comparação entre Canoas e Pelotas\n");
+
+    printf("Canoas tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C3);
+    printf("Pelotas tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C4);
+    if (numero_de_pontos_turisticos_C3 > numero_de_pontos_turisticos_C4 ){
+        printf("Canoas  vence em nº de pontos turísticos\n");
+    } else{
+        printf("Pelotas vence em nº de pontos turísticos\n");
+    }
+
+    printf("Canoas tem de população: %d\n", populacao_C3);
+    printf("Pelotas tem de população: %d\n", populacao_C4);
+    if (populacao_C3 > populacao_C4 ){
+        printf("Canoas vence em quantidade de população\n");
+    } else{
+        printf("Pelotas vence em quantidade de população\n");
+    }
+
+    printf("Canoas tem área de: %d\n", area_C3);
+    printf("Pelotas tem área de: %d\n", area_C4);
+    if (area_C3 > area_C4 ){
+        printf("Canoas vence em área\n");
+    } else{
+        printf("Pelotas vence em área\n");
+    }
+
+    printf("Canoas tem PIB de: %d\n", PIB_C3);
+    printf("Pelotas tem PIB de: %d\n", PIB_C4);
+    if (PIB_C3 > PIB_C4 ){
+        printf("Canoas vence em PIB\n");
+    } else{
+        printf("Pelotas vence em PIB\n");
+    }
+
+    printf("Canoas tem densidade populacional de: %d\n", densidade_populacional_C3);
+    printf("Pelotas  tem densidade populacional de: %d\n", densidade_populacional_C4);
+    if (densidade_populacional_C3 < densidade_populacional_C4 ){
+        printf("Canoas vence em densidade populacional\n");
+    } else{
+        printf("Pelotas  vence densidade populacional\n");
+    }
+
+    printf("Canoas tem PIB per capita de: %d\n", pib_percapita_C3);
+    printf("Pelotas  tem PIB per capita de: %d\n", pib_percapita_C4);
+    if (pib_percapita_C3 > pib_percapita_C4){
+        printf("Canoas vence em PIB per capita\n");
+    } else{
+        printf("Pelotas  vence em PIB per capita\n");
+    }
+
+    printf("Comparação entre Rio de Janeiro e São Gonçalo\n");
+
+    printf("Rio de Janeiro tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D1);
+    printf("São Gonçalo tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D2);
+    if (numero_de_pontos_turisticos_D1 > numero_de_pontos_turisticos_D2 ){
+        printf("Rio de Janeiro vence em nº de pontos turísticos\n");
+    } else{
+        printf("São Gonçalo vence em nº de pontos turísticos\n");
+    }
+
+    printf("Rio de Janeiro tem de população: %d\n", populacao_D1);
+    printf("São Gonçalo tem de população: %d\n", populacao_D2);
+    if (populacao_D1 > populacao_D2 ){
+        printf("Rio de Janeiro vence em quantidade de população\n");
+    } else{
+        printf("São Gonçalo vence em quantidade de população\n");
+    }
+
+    printf("Rio de Janeiro tem área de: %d\n", area_D1);
+    printf("São Gonçalo tem área de: %d\n", area_D2);
+    if (area_D1 > area_D2 ){
+        printf("Canoas vence em área\n");
+    } else{
+        printf("São Gonçalo vence em área\n");
+    }
+
+    printf("Rio de Janeiro tem PIB de: %d\n", PIB_D1);
+    printf("São Gonçalo tem PIB de: %d\n", PIB_D2);
+    if (PIB_D1 > PIB_D2 ){
+        printf("Rio de Janeiro vence em PIB\n");
+    } else{
+        printf("São Gonçalo vence em PIB\n");
+    }
+
+    printf("Rio de Janeiro tem densidade populacional de: %d\n", densidade_populacional_D1);
+    printf("São Gonçalo  tem densidade populacional de: %d\n", densidade_populacional_D2);
+    if (densidade_populacional_D1 < densidade_populacional_D2 ){
+        printf("Canoas vence em densidade populacional\n");
+    } else{
+        printf("São Gonçalo  vence densidade populacional\n");
+    }
+
+    printf("Rio de Janeiro tem PIB per capita de: %d\n", pib_percapita_D1);
+    printf("São Gonçalo  tem PIB per capita de: %d\n", pib_percapita_D2);
+    if (pib_percapita_D1 > pib_percapita_D2){
+        printf("Rio de Janeiro vence em PIB per capita\n");
+    } else{
+        printf("São Gonçalo  vence em PIB per capita\n");
+    }
+
+    printf("Comparação entre Duque de Caxias e Nova Iguaçu\n");
+
+    printf("Rio de Janeiro tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D1);
+    printf("São Gonçalo tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D2);
+    if (numero_de_pontos_turisticos_D1 > numero_de_pontos_turisticos_D2 ){
+        printf("Rio de Janeiro vence em nº de pontos turísticos\n");
+    } else{
+        printf("São Gonçalo vence em nº de pontos turísticos\n");
+    }
+
+    printf("Rio de Janeiro tem de população: %d\n", populacao_D1);
+    printf("São Gonçalo tem de população: %d\n", populacao_D2);
+    if (populacao_D1 > populacao_D2 ){
+        printf("Rio de Janeiro vence em quantidade de população\n");
+    } else{
+        printf("São Gonçalo vence em quantidade de população\n");
+    }
+
+    printf("Rio de Janeiro tem área de: %d\n", area_D1);
+    printf("São Gonçalo tem área de: %d\n", area_D2);
+    if (area_D1 > area_D2 ){
+        printf("Canoas vence em área\n");
+    } else{
+        printf("São Gonçalo vence em área\n");
+    }
+
+    printf("Rio de Janeiro tem PIB de: %d\n", PIB_D1);
+    printf("São Gonçalo tem PIB de: %d\n", PIB_D2);
+    if (PIB_D1 > PIB_D2 ){
+        printf("Rio de Janeiro vence em PIB\n");
+    } else{
+        printf("São Gonçalo vence em PIB\n");
+    }
+
+    printf("Rio de Janeiro tem densidade populacional de: %d\n", densidade_populacional_D1);
+    printf("São Gonçalo  tem densidade populacional de: %d\n", densidade_populacional_D2);
+    if (densidade_populacional_D1 < densidade_populacional_D2 ){
+        printf("Canoas vence em densidade populacional\n");
+    } else{
+        printf("São Gonçalo  vence densidade populacional\n");
+    }
+
+    printf("Rio de Janeiro tem PIB per capita de: %d\n", pib_percapita_D1);
+    printf("São Gonçalo  tem PIB per capita de: %d\n", pib_percapita_D2);
+    if (pib_percapita_D1 > pib_percapita_D2){
+        printf("Rio de Janeiro vence em PIB per capita\n");
+    } else{
+        printf("São Gonçalo  vence em PIB per capita\n");
+    } 
+
+    printf("Comparação entre Curitiba e Londrina\n");
+
+    printf("Comparação entre Maringa e Ponta Grossa\n");
+
+    printf("Comparação entre Belo Horizonte e Uberlandia\n");
+
+    printf("Comparação entre Contagem e Juiz de Fora\n");
+
+    printf("Comparação entre Manaus e Itacoatiara\n");
+
+    printf("Comparação entre Manacapuru e Parintins\n");
+
+    printf("Comparação entre Salvador e Feira de Santana\n");
+
+
 
     return 0;
 }
