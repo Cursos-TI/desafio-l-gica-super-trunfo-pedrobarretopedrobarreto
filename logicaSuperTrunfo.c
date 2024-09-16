@@ -233,7 +233,22 @@ int main() {
     double pib_percapita_H2;
     double pib_percapita_H3;
     double pib_percapita_H4;
-
+    int opcaoA1eA2;
+    int opcaoA3eA4;
+    int opcaoB1eB2;
+    int opcaoB3eB4;
+    int opcaoC1eC2;
+    int opcaoC3eC4;
+    int opcaoD1eD2;
+    int opcaoD3eD4;
+    int opcaoE1eE2;
+    int opcaoE3eE4;
+    int opcaoF1eF2;
+    int opcaoF3eF4;
+    int opcaoG1eG2;
+    int opcaoG3eG4;
+    int opcaoH1eH2;
+    int opcaoH3eH4;
     
     // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
@@ -647,15 +662,30 @@ int main() {
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
     printf("Comparação entre São Paulo e Campinas\n");
-
+    printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
+    printf("1. Nº de pontos turísticos\n");
+    printf("2. Quantida de população\n");
+    printf("3. Área\n");
+    printf("4. PIB\n");
+    printf("5. Densidade Populacional\n");
+    printf("6. PIB Per Capita\n");
+    printf("Digite o número da opção que quer comparar:\n");
+    scanf("%d", opcaoA1eA2);
+    
+    switch(opcaoA1eA2)
+    {
+    case 1:
     printf("São Paulo tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A1);
     printf("Campinas tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A2);
     if (numero_de_pontos_turisticos_A1 > numero_de_pontos_turisticos_A2 ){
         printf("São Paulo vence em nº de pontos turísticos\n");
     } else{
+
         printf("Campinas vence em nº de pontos turísticos\n");
     }
+    break;
 
+    case 2:
     printf("São Paulo tem de população: %d\n", populacao_A1);
     printf("Campinas tem de população: %d\n", populacao_A2);
     if (populacao_A1 > populacao_A2 ){
@@ -663,7 +693,9 @@ int main() {
     } else{
         printf("Campinas vence em quantidade de população\n");
     }
+    break;
 
+    case 3:
     printf("São Paulo tem área de: %d\n", area_A1);
     printf("Campinas tem área de: %d\n", area_A2);
     if (area_A1 > area_A2 ){
@@ -671,7 +703,9 @@ int main() {
     } else{
         printf("Campinas vence em área\n");
     }
+    break;
 
+    case 4:
     printf("São Paulo tem PIB de: %d\n", PIB_A1);
     printf("Campinas tem PIB de: %d\n", PIB_A2);
     if (PIB_A1 > PIB_A2 ){
@@ -679,7 +713,9 @@ int main() {
     } else{
         printf("Campinas vence em PIB\n");
     }
+    break;
 
+    case 5:
     printf("São Paulo tem densidade populacional de: %f\n", densidade_populacional_A1);
     printf("Campinas tem densidade populacional de: %f\n", densidade_populacional_A2);
     if (densidade_populacional_A1 < densidade_populacional_A2 ){
@@ -687,7 +723,9 @@ int main() {
     } else{
         printf("Campinas vence densidade populacional\n");
     }
+    break;
 
+    case 6:
     printf("São Paulo tem PIB per capita de: %f\n", pib_percapita_A1);
     printf("Campinas tem PIB per capita de: %f\n", pib_percapita_A2);
     if (pib_percapita_A1 > pib_percapita_A2 ){
@@ -695,7 +733,11 @@ int main() {
     } else{
         printf("Campinas vence em PIB per capita\n");
     }
+    break;
 
+    default:
+            printf("Opção inválida\n");
+    }
 
 
     printf("Comparação entre Ribeirão Preto e São José dos Campos\n");
