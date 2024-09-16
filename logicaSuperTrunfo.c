@@ -670,14 +670,16 @@ int main() {
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
     printf("Digite o número da opção que quer comparar:\n");
-    scanf("%d", opcaoA1eA2);
+    scanf("%d", &opcaoA1eA2);
     
     switch(opcaoA1eA2)
     {
     case 1:
     printf("São Paulo tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A1);
     printf("Campinas tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A2);
-    if (numero_de_pontos_turisticos_A1 > numero_de_pontos_turisticos_A2 ){
+    if (numero_de_pontos_turisticos_A1 == numero_de_pontos_turisticos_A2 ){
+        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
+    } else if (numero_de_pontos_turisticos_A1 > numero_de_pontos_turisticos_A2 ){
         printf("São Paulo vence em nº de pontos turísticos\n");
     } else{
 
@@ -688,7 +690,9 @@ int main() {
     case 2:
     printf("São Paulo tem de população: %d\n", populacao_A1);
     printf("Campinas tem de população: %d\n", populacao_A2);
-    if (populacao_A1 > populacao_A2 ){
+    if (populacao_A1 == populacao_A2 ){
+        printf("EMPATE! As cidades tem quantidade de população igual.\n");
+    } else if (populacao_A1 > populacao_A2 ){
         printf("São Paulo vence em quantidade de população\n");
     } else{
         printf("Campinas vence em quantidade de população\n");
@@ -698,7 +702,9 @@ int main() {
     case 3:
     printf("São Paulo tem área de: %d\n", area_A1);
     printf("Campinas tem área de: %d\n", area_A2);
-    if (area_A1 > area_A2 ){
+    if (area_A1 == area_A2 ){
+        printf("EMPATE! As cidades tem área igual.\n");
+    } else if (area_A1 > area_A2 ){
         printf("São Paulo vence em área\n");
     } else{
         printf("Campinas vence em área\n");
@@ -708,7 +714,9 @@ int main() {
     case 4:
     printf("São Paulo tem PIB de: %d\n", PIB_A1);
     printf("Campinas tem PIB de: %d\n", PIB_A2);
-    if (PIB_A1 > PIB_A2 ){
+    if (PIB_A1 == PIB_A2 ){
+        printf("EMPATE! As cidades tem PIB igual.\n");
+    } else if (PIB_A1 > PIB_A2 ){
         printf("São Paulo vence em PIB\n");
     } else{
         printf("Campinas vence em PIB\n");
@@ -718,7 +726,9 @@ int main() {
     case 5:
     printf("São Paulo tem densidade populacional de: %f\n", densidade_populacional_A1);
     printf("Campinas tem densidade populacional de: %f\n", densidade_populacional_A2);
-    if (densidade_populacional_A1 < densidade_populacional_A2 ){
+    if (densidade_populacional_A1 == densidade_populacional_A2 ){
+        printf("EMPATE! As cidade têm densidade populacional igual.\n");
+    } else if (densidade_populacional_A1 < densidade_populacional_A2 ){
         printf("São Paulo vence em densidade populacional\n");
     } else{
         printf("Campinas vence densidade populacional\n");
@@ -728,7 +738,9 @@ int main() {
     case 6:
     printf("São Paulo tem PIB per capita de: %f\n", pib_percapita_A1);
     printf("Campinas tem PIB per capita de: %f\n", pib_percapita_A2);
-    if (pib_percapita_A1 > pib_percapita_A2 ){
+    if (pib_percapita_A1 == pib_percapita_A2 ){
+        printf("EMPATE! As cidades tem PIB per capita igual.\n");
+    } else if (pib_percapita_A1 > pib_percapita_A2 ){
         printf("São Paulo vence em PIB per capita\n");
     } else{
         printf("Campinas vence em PIB per capita\n");
