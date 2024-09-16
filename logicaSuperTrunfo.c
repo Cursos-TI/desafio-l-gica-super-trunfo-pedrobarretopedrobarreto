@@ -840,7 +840,7 @@ int main() {
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
     printf("Digite o número da opção que quer comparar:\n");
-    scanf("%d", &opcaoA3eA4);
+    scanf("%d", &opcaoB1eB2);
     
     switch(opcaoB1eB2)
     {
@@ -1340,7 +1340,7 @@ int main() {
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
     printf("Digite o número da opção que quer comparar:\n");
-    scanf("%d", &opcaoA1eA2);
+    scanf("%d", &opcaoE1eE2);
     
     switch(opcaoE1eE2)
     {
@@ -1920,15 +1920,15 @@ int main() {
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
     printf("Digite o número da opção que quer comparar:\n");
-    scanf("%d", &opcaoH1eH2);
+    scanf("%d", &opcaoH3eH4);
     
-    switch(opcaoH1eH2)
+    switch(opcaoH3eH4)
     {
     case 1:
 
-    printf("Vitória da Conquista tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H1);
-    printf("Camacari tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H2);
-    if (numero_de_pontos_turisticos_H1 > numero_de_pontos_turisticos_H2 ){
+    printf("Vitória da Conquista tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H3);
+    printf("Camacari tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H4);
+    if (numero_de_pontos_turisticos_H3 > numero_de_pontos_turisticos_H4 ){
         printf("Vitória da Conquista vence em nº de pontos turísticos\n");
     } else{
         printf("Camacari vence em nº de pontos turísticos\n");
@@ -1937,9 +1937,9 @@ int main() {
 
     case 2:
 
-    printf("Vitória da Conquista tem de população: %d\n", populacao_H1);
-    printf("Camacari tem de população: %d\n", populacao_H2);
-    if (populacao_H1 > populacao_H2 ){
+    printf("Vitória da Conquista tem de população: %d\n", populacao_H3);
+    printf("Camacari tem de população: %d\n", populacao_H4);
+    if (populacao_H3 > populacao_H4 ){
         printf("Vitória da Conquista vence em quantidade de população\n");
     } else{
         printf("Camacari vence em quantidade de população\n");
@@ -1948,9 +1948,9 @@ int main() {
 
     case 3:
 
-    printf("Vitória da Conquista tem área de: %d\n", area_H1);
-    printf("Camacari tem área de: %d\n", area_H2);
-    if (area_H1 > area_H2 ){
+    printf("Vitória da Conquista tem área de: %d\n", area_H3);
+    printf("Camacari tem área de: %d\n", area_H4);
+    if (area_H3 > area_H4 ){
         printf("Vitória da Conquista vence em área\n");
     } else{
         printf("Camacari vence em área\n");
@@ -1959,9 +1959,9 @@ int main() {
 
     case 4:
 
-    printf("Vitória da Conquista tem PIB de: %d\n", PIB_H1 );
-    printf("Camacari tem PIB de: %d\n", PIB_H2);
-    if (PIB_H1  > PIB_H2 ){
+    printf("Vitória da Conquista tem PIB de: %d\n", PIB_H3 );
+    printf("Camacari tem PIB de: %d\n", PIB_H4);
+    if (PIB_H3  > PIB_H4 ){
         printf("Vitória da Conquista vence em PIB\n");
     } else{
         printf("Camacari vence em PIB\n");
@@ -1970,9 +1970,9 @@ int main() {
 
     case 5:
 
-    printf("Vitória da Conquista tem densidade populacional de: %f\n", densidade_populacional_H1);
-    printf("Camacari tem densidade populacional de: %f\n", densidade_populacional_H2);
-    if (densidade_populacional_H1  < densidade_populacional_H2 ){
+    printf("Vitória da Conquista tem densidade populacional de: %f\n", densidade_populacional_H3);
+    printf("Camacari tem densidade populacional de: %f\n", densidade_populacional_H4);
+    if (densidade_populacional_H3  < densidade_populacional_H4 ){
         printf("Vitória da Conquista vence em densidade populacional\n");
     } else{
         printf("Camacari vence densidade populacional\n");
@@ -1981,10 +1981,10 @@ int main() {
 
     case 6:
 
-    printf("Vitória da Conquista tem PIB per capita de: %f\n", pib_percapita_H1 );
-    printf("Camacari tem PIB per capita de: %f\n", pib_percapita_H2);
-    if (pib_percapita_H1 > pib_percapita_H2){
-        printf("Salvador vence em PIB per capita\n");
+    printf("Vitória da Conquista tem PIB per capita de: %f\n", pib_percapita_H3 );
+    printf("Camacari tem PIB per capita de: %f\n", pib_percapita_H4);
+    if (pib_percapita_H3 > pib_percapita_H4){
+        printf("vitória da Conquista vence em PIB per capita\n");
     } else{
         printf("Camacari vence em PIB per capita\n");
     } 
