@@ -894,6 +894,16 @@ int main() {
         printf("Campinas venceu nos dois atributos");
     }
     printf("\n");
+
+    printf("Comparação dos dois atributos");
+    if ( resultado1A1eA2 + resultado2A1eA2 == 2){
+        printf("São Paulo venceu nos dois atributos");
+    } else if (resultado1A1eA2 + resultado2A1eA2 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1A1eA2 + resultado2A1eA2 == 0){
+        printf("Campinas venceu nos dois atributos");
+    }
+    printf("\n");
     
 
 
@@ -1069,6 +1079,16 @@ int main() {
     default:
             printf("Opção inválida\n");
     break;
+    }
+    printf("\n");
+
+    printf("Comparação dos dois atributos");
+    if ( resultado1A3eA4 + resultado2A3eA4 == 2){
+        printf("Ribeirão Preto venceu nos dois atributos");
+    } else if (resultado1A3eA4 + resultado2A3eA4 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1A3eA4 + resultado2A3eA4 == 0){
+        printf("São José venceu nos dois atributos");
     }
     printf("\n");
 
@@ -1256,6 +1276,16 @@ int main() {
     }
     printf("\n");
 
+    printf("Comparação dos dois atributos");
+    if ( resultado1B1eB2 + resultado2B1eB2 == 2){
+        printf("Florianópolis venceu nos dois atributos");
+    } else if (resultado1B1eB2 + resultado2B1eB2 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1B1eB2 + resultado2B1eB2 == 0){
+        printf("Joinville venceu nos dois atributos");
+    }
+    printf("\n");
+
     printf("Comparação entre Blumenau e São José\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
     printf("1. Nº de pontos turísticos\n");
@@ -1440,6 +1470,16 @@ int main() {
     default:
             printf("Opção inválida\n");
     break;
+    }
+    printf("\n");
+
+    printf("Comparação dos dois atributos");
+    if ( resultado1B3eB4 + resultado2B3eB4 == 2){
+        printf("Blumenau venceu nos dois atributos");
+    } else if (resultado1B3eB4 + resultado2B3eB4 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1B3eB4 + resultado2B3eB4 == 0){
+        printf("São José venceu nos dois atributos");
     }
     printf("\n");
 
@@ -1631,6 +1671,16 @@ int main() {
     }
     printf("\n");
 
+    printf("Comparação dos dois atributos");
+    if ( resultado1C1eC2 + resultado2C1eC2 == 2){
+        printf("Porto Alegre venceu nos dois atributos");
+    } else if (resultado1C1eC2 + resultado2C1eC2 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1C1eC2 + resultado2C1eC2 == 0){
+        printf("Caxias do Sul venceu nos dois atributos");
+    }
+    printf("\n");
+
     printf("Comparação entre Canoas e Pelotas\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
     printf("1. Nº de pontos turísticos\n");
@@ -1813,6 +1863,16 @@ int main() {
     default:
             printf("Opção inválida\n");
     break;
+    }
+    printf("\n");
+
+    printf("Comparação dos dois atributos");
+    if ( resultado1C3eC4 + resultado2C3eC4 == 2){
+        printf("Canoas venceu nos dois atributos");
+    } else if (resultado1C3eC4 + resultado2C3eC4 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1C3eC4 + resultado2C3eC4 == 0){
+        printf("Pelotas venceu nos dois atributos");
     }
     printf("\n");
 
@@ -2003,6 +2063,16 @@ int main() {
     }
     printf("\n");
 
+    printf("Comparação dos dois atributos");
+    if ( resultado1D1eD2 + resultado2D1eD2 == 2){
+        printf("Rio De Janeiro venceu nos dois atributos");
+    } else if (resultado1D1eD2 + resultado2D1eD2 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1D1eD2 + resultado2D1eD2 == 0){
+        printf("São Gonçalo venceu nos dois atributos");
+    }
+    printf("\n");
+
     printf("Comparação entre Duque de Caxias e Nova Iguaçu\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
     printf("1. Nº de pontos turísticos\n");
@@ -2187,6 +2257,16 @@ int main() {
     default:
             printf("Opção inválida\n");
     break;
+    }
+    printf("\n");
+
+    printf("Comparação dos dois atributos");
+    if ( resultado1D3eD4 + resultado2D3eD4 == 2){
+        printf("Duque de Caxias venceu nos dois atributos");
+    } else if (resultado1D3eD4 + resultado2D3eD4 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1D3eD4 + resultado2D3eD4 == 0){
+        printf("Nova Iguaçu venceu nos dois atributos");
     }
     printf("\n");
 
@@ -2377,6 +2457,16 @@ int main() {
     }
     printf("\n");
 
+    printf("Comparação dos dois atributos");
+    if ( resultado1E1eE2 + resultado2E1eE2 == 2){
+        printf("Curitiba venceu nos dois atributos");
+    } else if (resultado1E1eE2 + resultado2E1eE2 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1E1eE2 + resultado2E1eE2 == 0){
+        printf("Londria venceu nos dois atributos");
+    }
+    printf("\n");
+
     printf("Comparação entre Maringa e Ponta Grossa\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
     printf("1. Nº de pontos turísticos\n");
@@ -2561,6 +2651,16 @@ int main() {
     default:
             printf("Opção inválida\n");
     break;
+    }
+    printf("\n");
+
+    printf("Comparação dos dois atributos");
+    if ( resultado1E3eE4 + resultado2E3eE4 == 2){
+        printf("Maringá venceu nos dois atributos");
+    } else if (resultado1E3eE4 + resultado2E3eE4 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1E3eE4 + resultado2E3eE4 == 0){
+        printf("Ponta Grossa venceu nos dois atributos");
     }
     printf("\n");
 
@@ -2752,6 +2852,16 @@ int main() {
     }
     printf("\n");
 
+    printf("Comparação dos dois atributos");
+    if ( resultado1F1eF2 + resultado2F1eF2 == 2){
+        printf("Uberlândia venceu nos dois atributos");
+    } else if (resultado1F1eF2 + resultado2F1eF2 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1F1eF2 + resultado2F1eF2 == 0){
+        printf("Belo Horizonte venceu nos dois atributos");
+    }
+    printf("\n");
+
     printf("Comparação entre Contagem e Juiz de Fora\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
     printf("1. Nº de pontos turísticos\n");
@@ -2935,6 +3045,16 @@ int main() {
     default:
             printf("Opção inválida\n");
     break;
+    }
+    printf("\n");
+
+    printf("Comparação dos dois atributos");
+    if ( resultado1F3eF4 + resultado2F3eF4 == 2){
+        printf("Contagem venceu nos dois atributos");
+    } else if (resultado1F3eF4 + resultado2F3eF4 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1F3eF4 + resultado2F3eF4 == 0){
+        printf("Juiz de Fora venceu nos dois atributos");
     }
     printf("\n");
 
@@ -3124,6 +3244,16 @@ int main() {
     }
     printf("\n");
 
+    printf("Comparação dos dois atributos");
+    if ( resultado1G1eG2 + resultado2G1eG2 == 2){
+        printf("Manaus venceu nos dois atributos");
+    } else if (resultado1G1eG2 + resultado2G1eG2 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1G1eG2 + resultado2G1eG2 == 0){
+        printf("Itacoatiara venceu nos dois atributos");
+    }
+    printf("\n");
+
     printf("Comparação entre Manacapuru e Parintins\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
     printf("1. Nº de pontos turísticos\n");
@@ -3310,6 +3440,16 @@ int main() {
     }
     printf("\n");
 
+    printf("Comparação dos dois atributos");
+    if ( resultado1G3eG4 + resultado2G3eG4 == 2){
+        printf("Manacapuru venceu nos dois atributos");
+    } else if (resultado1G3eG4 + resultado2G3eG4 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1G3eG4 + resultado2G3eG4 == 0){
+        printf("Parintins venceu nos dois atributos");
+    }
+    printf("\n");
+
 
     printf("Comparação entre Salvador e Feira de Santana\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -3485,6 +3625,16 @@ int main() {
     }
     printf("\n");
 
+    printf("Comparação dos dois atributos");
+    if ( resultado1H1eH2 + resultado2H1eH2 == 2){
+        printf("Salvador venceu nos dois atributos");
+    } else if (resultado1H1eH2 + resultado2H1eH2 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1H1eH2 + resultado2H1eH2 == 0){
+        printf("Feira de Santana venceu nos dois atributos");
+    }
+    printf("\n");
+
 
     printf("Comparação entre Vitória da Conquista e Camacari\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -3646,7 +3796,7 @@ int main() {
     printf("Vitória da Conquista tem PIB per capita de: %f\n", pib_percapita_H3 );
     printf("Camacari tem PIB per capita de: %f\n", pib_percapita_H4);
     if (pib_percapita_H3 > pib_percapita_H4){
-        printf("vitória da Conquista vence em PIB per capita\n");
+        printf("Vitória da Conquista vence em PIB per capita\n");
         resultado2H3eH4 = 1;
     } else{
         printf("Camacari vence em PIB per capita\n");
@@ -3658,6 +3808,16 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
+
+    printf("Comparação dos dois atributos");
+    if ( resultado1H3eH4 + resultado2H3eH4 == 2){
+        printf("Vitória da Conquista venceu nos dois atributos");
+    } else if (resultado1H3eH4 + resultado2H3eH4 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1H3eH4 + resultado2H3eH4 == 0){
+        printf("Camacari venceu nos dois atributos");
+    }
+    printf("\n");
 
 
     return 0;
