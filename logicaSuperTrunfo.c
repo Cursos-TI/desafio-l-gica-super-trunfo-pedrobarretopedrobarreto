@@ -249,6 +249,54 @@ int main() {
     int opcaoG3eG4;
     int opcaoH1eH2;
     int opcaoH3eH4;
+    int opcao2A1eA2;
+    int opcao2A3eA4;
+    int opcao2B1eB2;
+    int opcao2B3eB4;
+    int opcao2C1eC2;
+    int opcao2C3eC4;
+    int opcao2D1eD2;
+    int opcao2D3eD4;
+    int opcao2E1eE2;
+    int opcao2E3eE4;
+    int opcao2F1eF2;
+    int opcao2F3eF4;
+    int opcao2G1eG2;
+    int opcao2G3eG4;
+    int opcao2H1eH2;
+    int opcao2H3eH4;
+    int resultado1A1eA2;
+    int resultado1A3eA4;
+    int resultado1B1eB2;
+    int resultado1B3eB4;
+    int resultado1C1eC2;
+    int resultado1C3eC4;
+    int resultado1D1eD2;
+    int resultado1D3eD4;
+    int resultado1E1eE2;
+    int resultado1E3eE4;
+    int resultado1F1eF2;
+    int resultado1F3eF4;
+    int resultado1G1eG2;
+    int resultado1G3eG4;
+    int resultado1H1eH2;
+    int resultado1H3eH4;
+    int resultado2A1eA2;
+    int resultado2A3eA4;
+    int resultado2B1eB2;
+    int resultado2B3eB4;
+    int resultado2C1eC2;
+    int resultado2C3eC4;
+    int resultado2D1eD2;
+    int resultado2D3eD4;
+    int resultado2E1eE2;
+    int resultado2E3eE4;
+    int resultado2F1eF2;
+    int resultado2F3eF4;
+    int resultado2G1eG2;
+    int resultado2G3eG4;
+    int resultado2H1eH2;
+    int resultado2H3eH4;
     
     // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
@@ -660,6 +708,7 @@ int main() {
     // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo;
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+    printf("\n");
 
     printf("Comparação entre São Paulo e Campinas\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -669,81 +718,84 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoA1eA2);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2A1eA2);
+    printf("\n");
     
     switch(opcaoA1eA2)
     {
     case 1:
     printf("São Paulo tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A1);
     printf("Campinas tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A2);
-    if (numero_de_pontos_turisticos_A1 == numero_de_pontos_turisticos_A2 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_A1 > numero_de_pontos_turisticos_A2 ){
+    if (numero_de_pontos_turisticos_A1 > numero_de_pontos_turisticos_A2 ){
         printf("São Paulo vence em nº de pontos turísticos\n");
+        resultado1A1eA2 = 1;
     } else{
 
         printf("Campinas vence em nº de pontos turísticos\n");
+        resultado1A1eA2 = 0;
     }
     break;
 
     case 2:
     printf("São Paulo tem de população: %d\n", populacao_A1);
     printf("Campinas tem de população: %d\n", populacao_A2);
-    if (populacao_A1 == populacao_A2 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_A1 > populacao_A2 ){
+    if (populacao_A1 > populacao_A2 ){
         printf("São Paulo vence em quantidade de população\n");
+        resultado1A1eA2 = 1;
     } else{
         printf("Campinas vence em quantidade de população\n");
+        resultado1A1eA2 = 0;
     }
     break;
 
     case 3:
     printf("São Paulo tem área de: %d\n", area_A1);
     printf("Campinas tem área de: %d\n", area_A2);
-    if (area_A1 == area_A2 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_A1 > area_A2 ){
+    if (area_A1 > area_A2 ){
         printf("São Paulo vence em área\n");
+        resultado1A1eA2 = 1;
     } else{
         printf("Campinas vence em área\n");
+        resultado1A1eA2 = 0;
     }
     break;
 
     case 4:
     printf("São Paulo tem PIB de: %d\n", PIB_A1);
     printf("Campinas tem PIB de: %d\n", PIB_A2);
-    if (PIB_A1 == PIB_A2 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_A1 > PIB_A2 ){
+    if (PIB_A1 > PIB_A2 ){
         printf("São Paulo vence em PIB\n");
+        resultado1A1eA2 = 1;
     } else{
         printf("Campinas vence em PIB\n");
+        resultado1A1eA2 = 0;
     }
     break;
 
     case 5:
     printf("São Paulo tem densidade populacional de: %f\n", densidade_populacional_A1);
     printf("Campinas tem densidade populacional de: %f\n", densidade_populacional_A2);
-    if (densidade_populacional_A1 == densidade_populacional_A2 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_A1 < densidade_populacional_A2 ){
+    if (densidade_populacional_A1 < densidade_populacional_A2 ){
         printf("São Paulo vence em densidade populacional\n");
+        resultado1A1eA2 = 1;
     } else{
         printf("Campinas vence densidade populacional\n");
+        resultado1A1eA2 = 0;
     }
     break;
 
     case 6:
     printf("São Paulo tem PIB per capita de: %f\n", pib_percapita_A1);
     printf("Campinas tem PIB per capita de: %f\n", pib_percapita_A2);
-    if (pib_percapita_A1 == pib_percapita_A2 ){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_A1 > pib_percapita_A2 ){
+    if (pib_percapita_A1 > pib_percapita_A2 ){
         printf("São Paulo vence em PIB per capita\n");
+        resultado1A1eA2 = 1;
     } else{
         printf("Campinas vence em PIB per capita\n");
+        resultado1A1eA2 = 0;
     }
     break;
 
@@ -751,6 +803,98 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2A1eA2)
+    {
+    case 1:
+    printf("São Paulo tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A1);
+    printf("Campinas tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A2);
+    if (numero_de_pontos_turisticos_A1 > numero_de_pontos_turisticos_A2 ){
+        printf("São Paulo vence em nº de pontos turísticos\n");
+        resultado2A1eA2 = 1;
+    } else{
+
+        printf("Campinas vence em nº de pontos turísticos\n");
+        resultado2A1eA2 = 0;
+    }
+    break;
+
+    case 2:
+    printf("São Paulo tem de população: %d\n", populacao_A1);
+    printf("Campinas tem de população: %d\n", populacao_A2);
+    if (populacao_A1 > populacao_A2 ){
+        printf("São Paulo vence em quantidade de população\n");
+        resultado2A1eA2 = 1;
+    } else{
+        printf("Campinas vence em quantidade de população\n");
+        resultado2A1eA2 = 0;
+    }
+    break;
+
+    case 3:
+    printf("São Paulo tem área de: %d\n", area_A1);
+    printf("Campinas tem área de: %d\n", area_A2);
+    if (area_A1 > area_A2 ){
+        printf("São Paulo vence em área\n");
+        resultado2A1eA2 = 1;
+    } else{
+        printf("Campinas vence em área\n");
+        resultado2A1eA2 = 0;
+    }
+    break;
+
+    case 4:
+    printf("São Paulo tem PIB de: %d\n", PIB_A1);
+    printf("Campinas tem PIB de: %d\n", PIB_A2);
+    if (PIB_A1 > PIB_A2 ){
+        printf("São Paulo vence em PIB\n");
+        resultado2A1eA2 = 1;
+    } else{
+        printf("Campinas vence em PIB\n");
+        resultado2A1eA2 = 0;
+    }
+    break;
+
+    case 5:
+    printf("São Paulo tem densidade populacional de: %f\n", densidade_populacional_A1);
+    printf("Campinas tem densidade populacional de: %f\n", densidade_populacional_A2);
+    if (densidade_populacional_A1 < densidade_populacional_A2 ){
+        printf("São Paulo vence em densidade populacional\n");
+        resultado2A1eA2 = 1;
+    } else{
+        printf("Campinas vence densidade populacional\n");
+        resultado2A1eA2 = 0;
+    }
+    break;
+
+    case 6:
+    printf("São Paulo tem PIB per capita de: %f\n", pib_percapita_A1);
+    printf("Campinas tem PIB per capita de: %f\n", pib_percapita_A2);
+    if (pib_percapita_A1 > pib_percapita_A2 ){
+        printf("São Paulo vence em PIB per capita\n");
+        resultado2A1eA2 = 1;
+    } else{
+        printf("Campinas vence em PIB per capita\n");
+        resultado2A1eA2 = 0;
+    }
+    break;
+
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
+    printf("Comparação dos dois atributos\n");
+    if ( resultado1A1eA2 + resultado2A1eA2 == 2){
+        printf("São Paulo venceu nos dois atributos");
+    } else if (resultado1A1eA2 + resultado2A1eA2 == 1){
+        printf("As cidades empataram, cada uma vence em pelo menos um atributo");
+    } if (resultado1A1eA2 + resultado2A1eA2 == 0){
+        printf("Campinas venceu nos dois atributos");
+    }
+    printf("\n");
+    
 
 
     printf("Comparação entre Ribeirão Preto e São José dos Campos\n");
@@ -761,56 +905,60 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoA3eA4);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2A3eA4);
+    printf("\n");
+    
     
     switch(opcaoA3eA4)
     {
     case 1:
     printf("Ribeirão Preto tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A3);
     printf("São José dos Campos tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A4);
-   if (numero_de_pontos_turisticos_A3 == numero_de_pontos_turisticos_A4 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_A3 > numero_de_pontos_turisticos_A4 ){
+    if (numero_de_pontos_turisticos_A3 > numero_de_pontos_turisticos_A4 ){
         printf("Ribeirão Preto vence em nº de pontos turísticos\n");
+        resultado1A3eA4 = 1;
     } else {
         printf("São José dos Campos vence em nº de pontos turísticos\n");
+        resultado1A3eA4 = 0;
     }
     break;
 
     case 2:
     printf("Ribeirão Preto tem de população: %d\n", populacao_A3);
     printf("São José dos Campos tem de população: %d\n", populacao_A4);
-    if (populacao_A3 == populacao_A4 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_A3 > populacao_A4 ){
+    if (populacao_A3 > populacao_A4 ){
         printf("Ribeirão Preto vence em quantidade de população\n");
+        resultado1A3eA4 = 1;
     } else{
         printf("São José dos Campos vence em quantidade de população\n");
+        resultado1A3eA4 = 0;
     }
     break;
 
     case 3:
     printf("Ribeirão Preto tem área de: %d\n", area_A3);
     printf("São José dos Campos tem área de: %d\n", area_A4);
-    if (area_A3 == area_A4 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_A3 > area_A4 ){
+    if (area_A3 > area_A4 ){
         printf("Ribeirão Preto vence em área\n");
+        resultado1A3eA4 = 1;
     } else{
         printf("São José dos Campos vence em área\n");
+        resultado1A3eA4 = 0;
     }
     break;
     
     case 4:
     printf("Ribeirão Preto tem PIB de: %d\n", PIB_A3);
     printf("São José dos Campos tem PIB de: %d\n", PIB_A4);
-    if (PIB_A3 == PIB_A4 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_A3 > PIB_A4 ){
+    if (PIB_A3 > PIB_A4 ){
         printf("Ribeirão Preto vence em PIB\n");
+        resultado1A3eA4 = 1;
     } else{
         printf("São José dos Campos vence em PIB\n");
+        resultado1A3eA4 = 0;
     }
 
     break;
@@ -818,30 +966,111 @@ int main() {
     case 5:
     printf("Ribeirão Preto tem densidade populacional de: %f\n", densidade_populacional_A3);
     printf("São José dos Campos tem densidade populacional de: %f\n", densidade_populacional_A4);
-    if (densidade_populacional_A3 == densidade_populacional_A4 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_A3 < densidade_populacional_A4 ){
+    if (densidade_populacional_A3 < densidade_populacional_A4 ){
         printf("Ribeirão Preto vence em densidade populacional\n");
+        resultado1A3eA4 = 1;
     } else{
         printf("São José dos Campos vence densidade populacional\n");
+        resultado1A3eA4 = 0;
     }
     break;
 
     case 6:
     printf("Ribeirão Preto tem PIB per capita de: %f\n", pib_percapita_A3);
     printf("São José dos Campos tem PIB per capita de: %f\n", pib_percapita_A4);
-    if (pib_percapita_A3 == pib_percapita_A4 ){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_A3 > pib_percapita_A4 ){
+    if (pib_percapita_A3 > pib_percapita_A4 ){
         printf("Ribeirão Preto vence em PIB per capita\n");
+        resultado1A3eA4 = 1;
     } else{
         printf("São José dos Campos vence em PIB per capita\n");
+        resultado1A3eA4 = 0;
     }
     break;
     default:
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2A3eA4)
+    {
+    case 1:
+    printf("Ribeirão Preto tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A3);
+    printf("São José dos Campos tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_A4);
+    if (numero_de_pontos_turisticos_A3 > numero_de_pontos_turisticos_A4 ){
+        printf("Ribeirão Preto vence em nº de pontos turísticos\n");
+        resultado2A3eA4 = 1;
+    } else {
+        printf("São José dos Campos vence em nº de pontos turísticos\n");
+        resultado2A3eA4 = 0;
+    }
+    break;
+
+    case 2:
+    printf("Ribeirão Preto tem de população: %d\n", populacao_A3);
+    printf("São José dos Campos tem de população: %d\n", populacao_A4);
+    if (populacao_A3 > populacao_A4 ){
+        printf("Ribeirão Preto vence em quantidade de população\n");
+        resultado2A3eA4 = 1;
+    } else{
+        printf("São José dos Campos vence em quantidade de população\n");
+        resultado2A3eA4 = 0;
+    }
+    break;
+
+    case 3:
+    printf("Ribeirão Preto tem área de: %d\n", area_A3);
+    printf("São José dos Campos tem área de: %d\n", area_A4);
+    if (area_A3 > area_A4 ){
+        printf("Ribeirão Preto vence em área\n");
+        resultado2A3eA4 = 1;
+    } else{
+        printf("São José dos Campos vence em área\n");
+        resultado2A3eA4 = 0;
+    }
+    break;
+    
+    case 4:
+    printf("Ribeirão Preto tem PIB de: %d\n", PIB_A3);
+    printf("São José dos Campos tem PIB de: %d\n", PIB_A4);
+    if (PIB_A3 > PIB_A4 ){
+        printf("Ribeirão Preto vence em PIB\n");
+        resultado2A3eA4 = 1;
+    } else{
+        printf("São José dos Campos vence em PIB\n");
+        resultado2A3eA4 = 0;
+    }
+
+    break;
+
+    case 5:
+    printf("Ribeirão Preto tem densidade populacional de: %f\n", densidade_populacional_A3);
+    printf("São José dos Campos tem densidade populacional de: %f\n", densidade_populacional_A4);
+    if (densidade_populacional_A3 < densidade_populacional_A4 ){
+        printf("Ribeirão Preto vence em densidade populacional\n");
+        resultado2A3eA4 = 1;
+    } else{
+        printf("São José dos Campos vence densidade populacional\n");
+        resultado2A3eA4 = 0;
+    }
+    break;
+
+    case 6:
+    printf("Ribeirão Preto tem PIB per capita de: %f\n", pib_percapita_A3);
+    printf("São José dos Campos tem PIB per capita de: %f\n", pib_percapita_A4);
+    if (pib_percapita_A3 > pib_percapita_A4 ){
+        printf("Ribeirão Preto vence em PIB per capita\n");
+        resultado2A3eA4 = 1;
+    } else{
+        printf("São José dos Campos vence em PIB per capita\n");
+        resultado2A3eA4 = 0;
+    }
+    break;
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
     printf("Comparação entre Florianópolis e Joinville\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -851,8 +1080,11 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoB1eB2);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2B1eB2);
+    printf("\n");
     
     switch(opcaoB1eB2)
     {
@@ -860,12 +1092,12 @@ int main() {
 
     printf("Florianópolis tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B1);
     printf("Joinville dos Campos tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B2);
-    if (numero_de_pontos_turisticos_B1 == numero_de_pontos_turisticos_B2 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_B1 > numero_de_pontos_turisticos_B2 ){
+    if (numero_de_pontos_turisticos_B1 > numero_de_pontos_turisticos_B2 ){
         printf("Florianópolis vence em nº de pontos turísticos\n");
+        resultado1B1eB2 = 1;
     } else{
         printf("Joinville vence em nº de pontos turísticos\n");
+        resultado1B1eB2 = 0;
     }
     break;
 
@@ -873,12 +1105,12 @@ int main() {
 
     printf("Florianópolis tem de população: %d\n", populacao_B1);
     printf("Joinville tem de população: %d\n", populacao_B2);
-    if (populacao_B1 == populacao_B2 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_B1 > populacao_B2 ){
+    if (populacao_B1 > populacao_B2 ){
         printf("Florianópolis vence em quantidade de população\n");
+        resultado1B1eB2 = 1;
     } else{
         printf("Joinville vence em quantidade de população\n");
+        resultado1B1eB2 = 0;
     }
     break;
 
@@ -886,12 +1118,12 @@ int main() {
 
     printf("Florianópolis tem área de: %d\n", area_B1);
     printf("Joinville tem área de: %d\n", area_B2);
-    if (area_B1 == area_B2 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_B1 > area_B2 ){
+    if (area_B1 > area_B2 ){
         printf("Florianópolis vence em área\n");
+        resultado1B1eB2 = 1;
     } else{
         printf("Joinville vence em área\n");
+        resultado1B1eB2 = 0;
     }
     break;
 
@@ -899,12 +1131,12 @@ int main() {
 
     printf("Florianópolis tem PIB de: %d\n", PIB_B1);
     printf("Joinville tem PIB de: %d\n", PIB_B2);
-    if (PIB_B1 == PIB_B2 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_B1 > PIB_B2 ){
+    if (PIB_B1 > PIB_B2 ){
         printf("Florianópolis vence em PIB\n");
+        resultado1B1eB2 = 1;
     } else{
         printf("Joinville vence em PIB\n");
+        resultado1B1eB2 = 0;
     }
     break;
 
@@ -912,12 +1144,12 @@ int main() {
 
     printf("Florianópolis tem densidade populacional de: %f\n", densidade_populacional_B1);
     printf("Joinville  tem densidade populacional de: %f\n", densidade_populacional_B2);
-    if (densidade_populacional_B1 == densidade_populacional_B2 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_B1 < densidade_populacional_B2 ){
+    if (densidade_populacional_B1 < densidade_populacional_B2 ){
         printf("Florianópolis vence em densidade populacional\n");
+        resultado1B1eB2 = 1;
     } else{
         printf("Joinville  vence densidade populacional\n");
+        resultado1B1eB2 = 0;
     }
     break;
 
@@ -925,18 +1157,104 @@ int main() {
 
     printf("Florianópolis tem PIB per capita de: %f\n", pib_percapita_B1);
     printf("Joinville  tem PIB per capita de: %f\n", pib_percapita_B2);
-    if (pib_percapita_B1 == pib_percapita_B2 ){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_B1 > pib_percapita_B2 ){
+    if (pib_percapita_B1 > pib_percapita_B2 ){
         printf("Florianópolis vence em PIB per capita\n");
+        resultado1B1eB2 = 1;
     } else{
         printf("Joinville  vence em PIB per capita\n");
+        resultado1B1eB2 = 0;
     }
     break;
     default:
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2B1eB2)
+    {
+    case 1:
+
+    printf("Florianópolis tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B1);
+    printf("Joinville dos Campos tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B2);
+    if (numero_de_pontos_turisticos_B1 > numero_de_pontos_turisticos_B2 ){
+        printf("Florianópolis vence em nº de pontos turísticos\n");
+        resultado2B1eB2 = 1;
+    } else{
+        printf("Joinville vence em nº de pontos turísticos\n");
+        resultado2B1eB2 = 0;
+    }
+    break;
+
+    case 2:
+
+    printf("Florianópolis tem de população: %d\n", populacao_B1);
+    printf("Joinville tem de população: %d\n", populacao_B2);
+    if (populacao_B1 > populacao_B2 ){
+        printf("Florianópolis vence em quantidade de população\n");
+        resultado2B1eB2 = 1;
+    } else{
+        printf("Joinville vence em quantidade de população\n");
+        resultado2B1eB2 = 0;
+    }
+    break;
+
+    case 3:
+
+    printf("Florianópolis tem área de: %d\n", area_B1);
+    printf("Joinville tem área de: %d\n", area_B2);
+    if (area_B1 > area_B2 ){
+        printf("Florianópolis vence em área\n");
+        resultado2B1eB2 = 1;
+    } else{
+        printf("Joinville vence em área\n");
+        resultado2B1eB2 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Florianópolis tem PIB de: %d\n", PIB_B1);
+    printf("Joinville tem PIB de: %d\n", PIB_B2);
+    if (PIB_B1 > PIB_B2 ){
+        printf("Florianópolis vence em PIB\n");
+        resultado2B1eB2 = 1;
+    } else{
+        printf("Joinville vence em PIB\n");
+        resultado2B1eB2 = 0;
+    }
+    break;
+
+    case 5:
+
+    printf("Florianópolis tem densidade populacional de: %f\n", densidade_populacional_B1);
+    printf("Joinville  tem densidade populacional de: %f\n", densidade_populacional_B2);
+    if (densidade_populacional_B1 < densidade_populacional_B2 ){
+        printf("Florianópolis vence em densidade populacional\n");
+        resultado2B1eB2 = 1;
+    } else{
+        printf("Joinville  vence densidade populacional\n");
+        resultado2B1eB2 = 0;
+    }
+    break;
+
+    case 6:
+
+    printf("Florianópolis tem PIB per capita de: %f\n", pib_percapita_B1);
+    printf("Joinville  tem PIB per capita de: %f\n", pib_percapita_B2);
+    if (pib_percapita_B1 > pib_percapita_B2 ){
+        printf("Florianópolis vence em PIB per capita\n");
+        resultado2B1eB2 = 1;
+    } else{
+        printf("Joinville  vence em PIB per capita\n");
+        resultado2B1eB2 = 0;
+    }
+    break;
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
     printf("Comparação entre Blumenau e São José\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -946,8 +1264,12 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoB3eB4);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2B3eB4);
+    printf("\n");
+    
     
     switch(opcaoB3eB4)
     {
@@ -955,12 +1277,12 @@ int main() {
 
     printf("Blumenau tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B3);
     printf("São José tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B4);
-    if (numero_de_pontos_turisticos_B3 == numero_de_pontos_turisticos_B4 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_B3 > numero_de_pontos_turisticos_B4 ){
+    if (numero_de_pontos_turisticos_B3 > numero_de_pontos_turisticos_B4 ){
         printf("Blumenau vence em nº de pontos turísticos\n");
+        resultado1B3eB4 = 1;
     } else{
         printf("São José vence em nº de pontos turísticos\n");
+        resultado1B3eB4 = 0;
     }
     break;
 
@@ -968,12 +1290,12 @@ int main() {
 
     printf("Blumenau tem de população: %d\n", populacao_B3);
     printf("São José tem de população: %d\n", populacao_B4);
-    if (populacao_B3 == populacao_B4 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_B3 > populacao_B4 ){
+    if (populacao_B3 > populacao_B4 ){
         printf("Blumenau vence em quantidade de população\n");
+        resultado1B3eB4 = 1;
     } else{
         printf("São José vence em quantidade de população\n");
+        resultado1B3eB4 = 0;
     }
     break;
 
@@ -981,12 +1303,12 @@ int main() {
 
     printf("Blumenau tem área de: %d\n", area_B3);
     printf("São José tem área de: %d\n", area_B4);
-    if (area_B3 == area_B4 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_B3 > area_B4 ){
+    if (area_B3 > area_B4 ){
         printf("Blumenau vence em área\n");
+        resultado1B3eB4 = 1;
     } else{
         printf("São José vence em área\n");
+        resultado1B3eB4 = 0;
     }
     break;
 
@@ -994,12 +1316,12 @@ int main() {
 
     printf("Blumenau tem PIB de: %d\n", PIB_B3);
     printf("São José tem PIB de: %d\n", PIB_B4);
-    if (PIB_B3 == PIB_B4 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_B3 > PIB_B4 ){
+    if (PIB_B3 > PIB_B4 ){
         printf("Blumenau vence em PIB\n");
+        resultado1B3eB4 = 1;
     } else{
         printf("São José vence em PIB\n");
+        resultado1B3eB4 = 0;
     }
     break;
 
@@ -1007,12 +1329,12 @@ int main() {
 
     printf("Blumenau tem densidade populacional de: %f\n", densidade_populacional_B3);
     printf("São José  tem densidade populacional de: %f\n", densidade_populacional_B4);
-    if (densidade_populacional_B3 == densidade_populacional_B4 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_B3 < densidade_populacional_B4 ){
+    if (densidade_populacional_B3 < densidade_populacional_B4 ){
         printf("Blumenau vence em densidade populacional\n");
+        resultado1B3eB4 = 1;
     } else{
         printf("São José  vence densidade populacional\n");
+        resultado1B3eB4 = 0;
     }
     break;
 
@@ -1020,12 +1342,12 @@ int main() {
 
     printf("Blumenau tem PIB per capita de: %f\n", pib_percapita_B3);
     printf("São José  tem PIB per capita de: %f\n", pib_percapita_B4);
-    if (pib_percapita_B3 == pib_percapita_B4){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_B3 > pib_percapita_B4){
+    if (pib_percapita_B3 > pib_percapita_B4){
         printf("Blumenau vence em PIB per capita\n");
+        resultado1B3eB4 = 1;
     } else{
         printf("São José  vence em PIB per capita\n");
+        resultado1B3eB4 = 0;
     }
     break;
 
@@ -1033,6 +1355,93 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2B3eB4)
+    {
+    case 1:
+
+    printf("Blumenau tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B3);
+    printf("São José tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_B4);
+    if (numero_de_pontos_turisticos_B3 > numero_de_pontos_turisticos_B4 ){
+        printf("Blumenau vence em nº de pontos turísticos\n");
+        resultado2B3eB4 = 1;
+    } else{
+        printf("São José vence em nº de pontos turísticos\n");
+        resultado2B3eB4 = 0;
+    }
+    break;
+
+    case 2:
+
+    printf("Blumenau tem de população: %d\n", populacao_B3);
+    printf("São José tem de população: %d\n", populacao_B4);
+    if (populacao_B3 > populacao_B4 ){
+        printf("Blumenau vence em quantidade de população\n");
+        resultado2B3eB4 = 1;
+    } else{
+        printf("São José vence em quantidade de população\n");
+        resultado2B3eB4 = 0;
+    }
+    break;
+
+    case 3:
+
+    printf("Blumenau tem área de: %d\n", area_B3);
+    printf("São José tem área de: %d\n", area_B4);
+    if (area_B3 > area_B4 ){
+        printf("Blumenau vence em área\n");
+        resultado2B3eB4 = 1;
+    } else{
+        printf("São José vence em área\n");
+        resultado2B3eB4 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Blumenau tem PIB de: %d\n", PIB_B3);
+    printf("São José tem PIB de: %d\n", PIB_B4);
+    if (PIB_B3 > PIB_B4 ){
+        printf("Blumenau vence em PIB\n");
+        resultado2B3eB4 = 1;
+    } else{
+        printf("São José vence em PIB\n");
+        resultado2B3eB4 = 0;
+    }
+    break;
+
+    case 5:
+
+    printf("Blumenau tem densidade populacional de: %f\n", densidade_populacional_B3);
+    printf("São José  tem densidade populacional de: %f\n", densidade_populacional_B4);
+    if (densidade_populacional_B3 < densidade_populacional_B4 ){
+        printf("Blumenau vence em densidade populacional\n");
+        resultado2B3eB4 = 1;
+    } else{
+        printf("São José  vence densidade populacional\n");
+        resultado2B3eB4 = 0;
+    }
+    break;
+
+    case 6:
+
+    printf("Blumenau tem PIB per capita de: %f\n", pib_percapita_B3);
+    printf("São José  tem PIB per capita de: %f\n", pib_percapita_B4);
+    if (pib_percapita_B3 > pib_percapita_B4){
+        printf("Blumenau vence em PIB per capita\n");
+        resultado2B3eB4 = 1;
+    } else{
+        printf("São José  vence em PIB per capita\n");
+        resultado2B3eB4 = 0;
+    }
+    break;
+
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
     printf("Comparação entre Porto Alegre e Caxias do Sul\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -1042,8 +1451,11 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoC1eC2);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2C1eC2);
+    printf("\n");
     
     switch(opcaoC1eC2)
     {
@@ -1051,12 +1463,12 @@ int main() {
 
     printf("Porto Alegre tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C1);
     printf("Caxias do Sul tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C2);
-    if (numero_de_pontos_turisticos_C1 == numero_de_pontos_turisticos_C2 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_C1 > numero_de_pontos_turisticos_C2 ){
+    if (numero_de_pontos_turisticos_C1 > numero_de_pontos_turisticos_C2 ){
         printf("Porto Alegre vence em nº de pontos turísticos\n");
+        resultado1C1eC2 = 1;
     } else{
         printf("Caxias do Sul vence em nº de pontos turísticos\n");
+        resultado1C1eC2 = 0;
     }
     break;
     
@@ -1064,12 +1476,12 @@ int main() {
 
     printf("Porto Alegre tem de população: %d\n", populacao_C1);
     printf("Caxias do Sul tem de população: %d\n", populacao_C2);
-    if (populacao_C1 == populacao_C2 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_C1 > populacao_C2 ){
+    if (populacao_C1 > populacao_C2 ){
         printf("Porto Alegre vence em quantidade de população\n");
+        resultado1C1eC2 = 1;
     } else{
         printf("Caxias do Sul vence em quantidade de população\n");
+        resultado1C1eC2 = 0;
     }
     break;
 
@@ -1077,12 +1489,12 @@ int main() {
 
     printf("Porto Alegre tem área de: %d\n", area_C1);
     printf("Caxias do Sul tem área de: %d\n", area_C2);
-    if (area_C1 == area_C2 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_C1 > area_C2 ){
+    if (area_C1 > area_C2 ){
         printf("Porto Alegre vence em área\n");
+        resultado1C1eC2 = 1;
     } else{
         printf("Caxias do Sul vence em área\n");
+        resultado1C1eC2 = 0;
     }
     break;
 
@@ -1090,12 +1502,12 @@ int main() {
 
     printf("Porto Alegre tem PIB de: %d\n", PIB_C1);
     printf("Caxias do Sul tem PIB de: %d\n", PIB_C2);
-    if (PIB_C1 == PIB_C2 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_C1 > PIB_C2 ){
+    if (PIB_C1 > PIB_C2 ){
         printf("Porto Alegre vence em PIB\n");
+        resultado1C1eC2 = 1;
     } else{
         printf("Caxias do Sul vence em PIB\n");
+        resultado1C1eC2 = 0;
     }
 
     break;
@@ -1104,12 +1516,12 @@ int main() {
 
     printf("Porto Alegre tem densidade populacional de: %f\n", densidade_populacional_C1);
     printf("Caxias do Sul  tem densidade populacional de: %f\n", densidade_populacional_C2);
-    if (densidade_populacional_C1 == densidade_populacional_C2 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_C1 < densidade_populacional_C2 ){
+    if (densidade_populacional_C1 < densidade_populacional_C2 ){
         printf("Porto Alegre vence em densidade populacional\n");
+        resultado1C1eC2 = 1;
     } else{
         printf("Caxias do Sul  vence densidade populacional\n");
+        resultado1C1eC2 = 0;
     }
 
     break; 
@@ -1118,18 +1530,106 @@ int main() {
 
     printf("Porto Alegre tem PIB per capita de: %f\n", pib_percapita_C1);
     printf("Caxias do Sul  tem PIB per capita de: %f\n", pib_percapita_C2);
-    if (pib_percapita_C1 == pib_percapita_C2){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_C1 > pib_percapita_C2){
+    if (pib_percapita_C1 > pib_percapita_C2){
         printf("Porto Alegre vence em PIB per capita\n");
+        resultado1C1eC2 = 1;
     } else{
         printf("Caxias do Sul  vence em PIB per capita\n");
+        resultado1C1eC2 = 0;
     }
     break;
     default:
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2C1eC2)
+    {
+    case 1:
+
+    printf("Porto Alegre tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C1);
+    printf("Caxias do Sul tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C2);
+    if (numero_de_pontos_turisticos_C1 > numero_de_pontos_turisticos_C2 ){
+        printf("Porto Alegre vence em nº de pontos turísticos\n");
+        resultado2C1eC2 = 1;
+    } else{
+        printf("Caxias do Sul vence em nº de pontos turísticos\n");
+        resultado2C1eC2 = 0;
+    }
+    break;
+    
+    case 2:
+
+    printf("Porto Alegre tem de população: %d\n", populacao_C1);
+    printf("Caxias do Sul tem de população: %d\n", populacao_C2);
+    if (populacao_C1 > populacao_C2 ){
+        printf("Porto Alegre vence em quantidade de população\n");
+        resultado2C1eC2 = 1;
+    } else{
+        printf("Caxias do Sul vence em quantidade de população\n");
+        resultado2C1eC2 = 0;
+    }
+    break;
+
+    case 3:
+
+    printf("Porto Alegre tem área de: %d\n", area_C1);
+    printf("Caxias do Sul tem área de: %d\n", area_C2);
+    if (area_C1 > area_C2 ){
+        printf("Porto Alegre vence em área\n");
+        resultado2C1eC2 = 1;
+    } else{
+        printf("Caxias do Sul vence em área\n");
+        resultado2C1eC2 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Porto Alegre tem PIB de: %d\n", PIB_C1);
+    printf("Caxias do Sul tem PIB de: %d\n", PIB_C2);
+    if (PIB_C1 > PIB_C2 ){
+        printf("Porto Alegre vence em PIB\n");
+        resultado2C1eC2 = 1;
+    } else{
+        printf("Caxias do Sul vence em PIB\n");
+        resultado2C1eC2 = 0;
+    }
+
+    break;
+
+    case 5:
+
+    printf("Porto Alegre tem densidade populacional de: %f\n", densidade_populacional_C1);
+    printf("Caxias do Sul  tem densidade populacional de: %f\n", densidade_populacional_C2);
+    if (densidade_populacional_C1 < densidade_populacional_C2 ){
+        printf("Porto Alegre vence em densidade populacional\n");
+        resultado2C1eC2 = 1;
+    } else{
+        printf("Caxias do Sul  vence densidade populacional\n");
+        resultado2C1eC2 = 0;
+    }
+
+    break; 
+
+    case 6:
+
+    printf("Porto Alegre tem PIB per capita de: %f\n", pib_percapita_C1);
+    printf("Caxias do Sul  tem PIB per capita de: %f\n", pib_percapita_C2);
+    if (pib_percapita_C1 > pib_percapita_C2){
+        printf("Porto Alegre vence em PIB per capita\n");
+        resultado2C1eC2 = 1;
+    } else{
+        printf("Caxias do Sul  vence em PIB per capita\n");
+        resultado2C1eC2 = 0;
+    }
+    break;
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
     printf("Comparação entre Canoas e Pelotas\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -1139,8 +1639,12 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoC3eC4);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2C3eC4);
+    printf("\n");
+    
     
     switch(opcaoC3eC4)
     {
@@ -1148,12 +1652,12 @@ int main() {
 
     printf("Canoas tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C3);
     printf("Pelotas tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C4);
-    if (numero_de_pontos_turisticos_C3 == numero_de_pontos_turisticos_C4 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_C3 > numero_de_pontos_turisticos_C4 ){
+    if (numero_de_pontos_turisticos_C3 > numero_de_pontos_turisticos_C4 ){
         printf("Canoas  vence em nº de pontos turísticos\n");
+        resultado1C3eC4 = 1;
     } else{
         printf("Pelotas vence em nº de pontos turísticos\n");
+        resultado1C3eC4 = 0;
     }
     break;
 
@@ -1161,12 +1665,12 @@ int main() {
 
     printf("Canoas tem de população: %d\n", populacao_C3);
     printf("Pelotas tem de população: %d\n", populacao_C4);
-    if (populacao_C3 == populacao_C4 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_C3 > populacao_C4 ){
+    if (populacao_C3 > populacao_C4 ){
         printf("Canoas vence em quantidade de população\n");
+        resultado1C3eC4 = 1;
     } else{
         printf("Pelotas vence em quantidade de população\n");
+        resultado1C3eC4 = 0;
     }
     break;
 
@@ -1174,12 +1678,12 @@ int main() {
 
     printf("Canoas tem área de: %d\n", area_C3);
     printf("Pelotas tem área de: %d\n", area_C4);
-    if (area_C3 == area_C4 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_C3 > area_C4 ){
+    if (area_C3 > area_C4 ){
         printf("Canoas vence em área\n");
+        resultado1C3eC4 = 1;
     } else{
         printf("Pelotas vence em área\n");
+        resultado1C3eC4 = 0;
     }
     break;
 
@@ -1187,12 +1691,12 @@ int main() {
 
     printf("Canoas tem PIB de: %d\n", PIB_C3);
     printf("Pelotas tem PIB de: %d\n", PIB_C4);
-    if (PIB_C3 == PIB_C4 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_C3 > PIB_C4 ){
+    if (PIB_C3 > PIB_C4 ){
         printf("Canoas vence em PIB\n");
+        resultado1C3eC4 = 1;
     } else{
         printf("Pelotas vence em PIB\n");
+        resultado1C3eC4 = 0;
     }
     break;
 
@@ -1200,12 +1704,12 @@ int main() {
 
     printf("Canoas tem densidade populacional de: %f\n", densidade_populacional_C3);
     printf("Pelotas  tem densidade populacional de: %f\n", densidade_populacional_C4);
-    if (densidade_populacional_C3 == densidade_populacional_C4 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_C3 < densidade_populacional_C4 ){
+    if (densidade_populacional_C3 < densidade_populacional_C4 ){
         printf("Canoas vence em densidade populacional\n");
+        resultado1C3eC4 = 1;
     } else{
         printf("Pelotas  vence densidade populacional\n");
+        resultado1C3eC4 = 0;
     }
     break;
 
@@ -1213,18 +1717,104 @@ int main() {
 
     printf("Canoas tem PIB per capita de: %f\n", pib_percapita_C3);
     printf("Pelotas  tem PIB per capita de: %f\n", pib_percapita_C4);
-    if (pib_percapita_C3 == pib_percapita_C4){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_C3 > pib_percapita_C4){
+    if (pib_percapita_C3 > pib_percapita_C4){
         printf("Canoas vence em PIB per capita\n");
+        resultado1C3eC4 = 1;
     } else{
         printf("Pelotas  vence em PIB per capita\n");
+        resultado1C3eC4 = 0;
     }
     break;
     default:
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2C3eC4)
+    {
+    case 1:
+
+    printf("Canoas tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C3);
+    printf("Pelotas tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_C4);
+    if (numero_de_pontos_turisticos_C3 > numero_de_pontos_turisticos_C4 ){
+        printf("Canoas  vence em nº de pontos turísticos\n");
+        resultado2C3eC4 = 1;
+    } else{
+        printf("Pelotas vence em nº de pontos turísticos\n");
+        resultado2C3eC4 = 0;
+    }
+    break;
+
+    case 2:
+
+    printf("Canoas tem de população: %d\n", populacao_C3);
+    printf("Pelotas tem de população: %d\n", populacao_C4);
+    if (populacao_C3 > populacao_C4 ){
+        printf("Canoas vence em quantidade de população\n");
+        resultado2C3eC4 = 1;
+    } else{
+        printf("Pelotas vence em quantidade de população\n");
+        resultado2C3eC4 = 0;
+    }
+    break;
+
+    case 3:
+
+    printf("Canoas tem área de: %d\n", area_C3);
+    printf("Pelotas tem área de: %d\n", area_C4);
+    if (area_C3 > area_C4 ){
+        printf("Canoas vence em área\n");
+        resultado2C3eC4 = 1;
+    } else{
+        printf("Pelotas vence em área\n");
+        resultado2C3eC4 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Canoas tem PIB de: %d\n", PIB_C3);
+    printf("Pelotas tem PIB de: %d\n", PIB_C4);
+    if (PIB_C3 > PIB_C4 ){
+        printf("Canoas vence em PIB\n");
+        resultado2C3eC4 = 1;
+    } else{
+        printf("Pelotas vence em PIB\n");
+        resultado2C3eC4 = 0;
+    }
+    break;
+
+    case 5:
+
+    printf("Canoas tem densidade populacional de: %f\n", densidade_populacional_C3);
+    printf("Pelotas  tem densidade populacional de: %f\n", densidade_populacional_C4);
+    if (densidade_populacional_C3 < densidade_populacional_C4 ){
+        printf("Canoas vence em densidade populacional\n");
+        resultado2C3eC4 = 1;
+    } else{
+        printf("Pelotas  vence densidade populacional\n");
+        resultado2C3eC4 = 0;
+    }
+    break;
+
+    case 6:
+
+    printf("Canoas tem PIB per capita de: %f\n", pib_percapita_C3);
+    printf("Pelotas  tem PIB per capita de: %f\n", pib_percapita_C4);
+    if (pib_percapita_C3 > pib_percapita_C4){
+        printf("Canoas vence em PIB per capita\n");
+        resultado2C3eC4 = 1;
+    } else{
+        printf("Pelotas  vence em PIB per capita\n");
+        resultado2C3eC4 = 0;
+    }
+    break;
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
     printf("Comparação entre Rio de Janeiro e São Gonçalo\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -1234,8 +1824,12 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoD1eD2);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2D1eD2);
+    printf("\n");
+    
     
     switch(opcaoD1eD2)
     {
@@ -1243,12 +1837,12 @@ int main() {
 
     printf("Rio de Janeiro tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D1);
     printf("São Gonçalo tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D2);
-    if (numero_de_pontos_turisticos_D1 == numero_de_pontos_turisticos_D2 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_D1 > numero_de_pontos_turisticos_D2 ){
+    if (numero_de_pontos_turisticos_D1 > numero_de_pontos_turisticos_D2 ){
         printf("Rio de Janeiro vence em nº de pontos turísticos\n");
+        resultado1D1eD2 = 1;
     } else{
         printf("São Gonçalo vence em nº de pontos turísticos\n");
+        resultado1D1eD2 = 0;
     }
     break;
 
@@ -1256,12 +1850,12 @@ int main() {
 
     printf("Rio de Janeiro tem de população: %d\n", populacao_D1);
     printf("São Gonçalo tem de população: %d\n", populacao_D2);
-    if (populacao_D1 == populacao_D2 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_D1 > populacao_D2 ){
+    if (populacao_D1 > populacao_D2 ){
         printf("Rio de Janeiro vence em quantidade de população\n");
+        resultado1D1eD2 = 1;
     } else{
         printf("São Gonçalo vence em quantidade de população\n");
+        resultado1D1eD2 = 0;
     }
     break;
 
@@ -1269,12 +1863,12 @@ int main() {
 
     printf("Rio de Janeiro tem área de: %d\n", area_D1);
     printf("São Gonçalo tem área de: %d\n", area_D2);
-    if (area_D1 == area_D2 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_D1 > area_D2 ){
+    if (area_D1 > area_D2 ){
         printf("Rio de Janeiro vence em área\n");
+        resultado1D1eD2 = 1;
     } else{
         printf("São Gonçalo vence em área\n");
+        resultado1D1eD2 = 0;
     }
     break;
 
@@ -1282,12 +1876,12 @@ int main() {
 
     printf("Rio de Janeiro tem PIB de: %d\n", PIB_D1);
     printf("São Gonçalo tem PIB de: %d\n", PIB_D2);
-    if (PIB_D1 == PIB_D2 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_D1 > PIB_D2 ){
+    if (PIB_D1 > PIB_D2 ){
         printf("Rio de Janeiro vence em PIB\n");
+        resultado1D1eD2 = 1;
     } else{
         printf("São Gonçalo vence em PIB\n");
+        resultado1D1eD2 = 0;
     }
     break;
 
@@ -1295,12 +1889,12 @@ int main() {
 
     printf("Rio de Janeiro tem densidade populacional de: %f\n", densidade_populacional_D1);
     printf("São Gonçalo  tem densidade populacional de: %f\n", densidade_populacional_D2);
-    if (densidade_populacional_D1 == densidade_populacional_D2 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_D1 < densidade_populacional_D2 ){
+    if (densidade_populacional_D1 < densidade_populacional_D2 ){
         printf("Rio de Janeiro vence em densidade populacional\n");
+        resultado1D1eD2 = 1;
     } else{
         printf("São Gonçalo  vence densidade populacional\n");
+        resultado1D1eD2 = 0;
     }
     break;
 
@@ -1308,12 +1902,12 @@ int main() {
 
     printf("Rio de Janeiro tem PIB per capita de: %f\n", pib_percapita_D1);
     printf("São Gonçalo  tem PIB per capita de: %f\n", pib_percapita_D2);
-    if (pib_percapita_D1 == pib_percapita_D2){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_D1 > pib_percapita_D2){
+    if (pib_percapita_D1 > pib_percapita_D2){
         printf("Rio de Janeiro vence em PIB per capita\n");
+        resultado1D1eD2 = 1;
     } else{
         printf("São Gonçalo  vence em PIB per capita\n");
+        resultado1D1eD2 = 0;
     }
     break;
 
@@ -1321,6 +1915,93 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2D1eD2)
+    {
+    case 1:
+
+    printf("Rio de Janeiro tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D1);
+    printf("São Gonçalo tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D2);
+    if (numero_de_pontos_turisticos_D1 > numero_de_pontos_turisticos_D2 ){
+        printf("Rio de Janeiro vence em nº de pontos turísticos\n");
+        resultado2D1eD2 = 1;
+    } else{
+        printf("São Gonçalo vence em nº de pontos turísticos\n");
+        resultado2D1eD2 = 0;
+    }
+    break;
+
+    case 2:
+
+    printf("Rio de Janeiro tem de população: %d\n", populacao_D1);
+    printf("São Gonçalo tem de população: %d\n", populacao_D2);
+    if (populacao_D1 > populacao_D2 ){
+        printf("Rio de Janeiro vence em quantidade de população\n");
+        resultado2D1eD2 = 1;
+    } else{
+        printf("São Gonçalo vence em quantidade de população\n");
+        resultado2D1eD2 = 0;
+    }
+    break;
+
+    case 3:
+
+    printf("Rio de Janeiro tem área de: %d\n", area_D1);
+    printf("São Gonçalo tem área de: %d\n", area_D2);
+    if (area_D1 > area_D2 ){
+        printf("Rio de Janeiro vence em área\n");
+        resultado2D1eD2 = 1;
+    } else{
+        printf("São Gonçalo vence em área\n");
+        resultado2D1eD2 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Rio de Janeiro tem PIB de: %d\n", PIB_D1);
+    printf("São Gonçalo tem PIB de: %d\n", PIB_D2);
+    if (PIB_D1 > PIB_D2 ){
+        printf("Rio de Janeiro vence em PIB\n");
+        resultado2D1eD2 = 1;
+    } else{
+        printf("São Gonçalo vence em PIB\n");
+        resultado2D1eD2 = 0;
+    }
+    break;
+
+    case 5:
+
+    printf("Rio de Janeiro tem densidade populacional de: %f\n", densidade_populacional_D1);
+    printf("São Gonçalo  tem densidade populacional de: %f\n", densidade_populacional_D2);
+    if (densidade_populacional_D1 < densidade_populacional_D2 ){
+        printf("Rio de Janeiro vence em densidade populacional\n");
+        resultado2D1eD2 = 1;
+    } else{
+        printf("São Gonçalo  vence densidade populacional\n");
+        resultado2D1eD2 = 0;
+    }
+    break;
+
+    case 6:
+
+    printf("Rio de Janeiro tem PIB per capita de: %f\n", pib_percapita_D1);
+    printf("São Gonçalo  tem PIB per capita de: %f\n", pib_percapita_D2);
+    if (pib_percapita_D1 > pib_percapita_D2){
+        printf("Rio de Janeiro vence em PIB per capita\n");
+        resultado2D1eD2 = 1;
+    } else{
+        printf("São Gonçalo  vence em PIB per capita\n");
+        resultado2D1eD2 = 0;
+    }
+    break;
+
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
     printf("Comparação entre Duque de Caxias e Nova Iguaçu\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -1330,8 +2011,12 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoD3eD4);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2D3eD4);
+    printf("\n");
+    
     
     switch(opcaoD3eD4)
     {
@@ -1339,12 +2024,12 @@ int main() {
 
     printf("Duque de Caxias tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D3);
     printf("Nova Iguaçu tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D4);
-    if (numero_de_pontos_turisticos_D3 == numero_de_pontos_turisticos_D4 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_D3 > numero_de_pontos_turisticos_D4 ){
+    if (numero_de_pontos_turisticos_D3 > numero_de_pontos_turisticos_D4 ){
         printf("Duque de Caxias vence em nº de pontos turísticos\n");
+        resultado1D3eD4 = 1;
     } else{
         printf("Nova Iguaçu vence em nº de pontos turísticos\n");
+        resultado1D3eD4 = 0;
     }
     break;
 
@@ -1352,12 +2037,12 @@ int main() {
 
     printf("Duque de Caxias tem de população: %d\n", populacao_D3);
     printf("Nova Iguaçu tem de população: %d\n", populacao_D4);
-    if (populacao_D3 == populacao_D4 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_D3 > populacao_D4 ){
+    if (populacao_D3 > populacao_D4 ){
         printf("Duque de Caxias vence em quantidade de população\n");
+        resultado1D3eD4 = 1;
     } else{
         printf("Nova Iguaçu vence em quantidade de população\n");
+        resultado1D3eD4 = 0;
     }
     break;
     
@@ -1365,12 +2050,12 @@ int main() {
 
     printf("Duque de Caxias tem área de: %d\n", area_D3);
     printf("Nova Iguaçu tem área de: %d\n", area_D4);
-    if (area_D3 == area_D4 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_D3 > area_D4 ){
+    if (area_D3 > area_D4 ){
         printf("Duque de Caxias vence em área\n");
+        resultado1D3eD4 = 1;
     } else{
         printf("Nova Iguaçu vence em área\n");
+        resultado1D3eD4 = 0;
     }
     break;
 
@@ -1378,12 +2063,12 @@ int main() {
 
     printf("Duque de Caxias tem PIB de: %d\n", PIB_D3 );
     printf("Nova Iguaçu tem PIB de: %d\n", PIB_D4);
-    if (PIB_D3  == PIB_D4 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_D3  > PIB_D4 ){
+    if (PIB_D3  > PIB_D4 ){
         printf("Duque de Caxias vence em PIB\n");
+        resultado1D3eD4 = 1;
     } else{
         printf("Nova Iguaçu vence em PIB\n");
+        resultado1D3eD4 = 0;
     }
     break;
 
@@ -1391,12 +2076,12 @@ int main() {
 
     printf("Duque de Caxias tem densidade populacional de: %f\n", densidade_populacional_D3);
     printf("Nova Iguaçu  tem densidade populacional de: %f\n", densidade_populacional_D4);
-    if (densidade_populacional_D3  == densidade_populacional_D4 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_D3  < densidade_populacional_D4 ){
+    if (densidade_populacional_D3  < densidade_populacional_D4 ){
         printf("Duque de Caxias vence em densidade populacional\n");
+        resultado1D3eD4 = 1;
     } else{
         printf("Nova Iguaçu  vence densidade populacional\n");
+        resultado1D3eD4 = 0;
     }
     break;
 
@@ -1404,12 +2089,12 @@ int main() {
 
     printf("Duque de Caxias tem PIB per capita de: %f\n", pib_percapita_D3 );
     printf("Nova Iguaçu  tem PIB per capita de: %f\n", pib_percapita_D4);
-    if (pib_percapita_D3 == pib_percapita_D4){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_D3 > pib_percapita_D4){
+    if (pib_percapita_D3 > pib_percapita_D4){
         printf("Duque de Caxias vence em PIB per capita\n");
+        resultado1D3eD4 = 1;
     } else{
         printf("Nova Iguaçu  vence em PIB per capita\n");
+        resultado1D3eD4 = 0;
     }
     break;
 
@@ -1417,6 +2102,93 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2D3eD4)
+    {
+    case 1:
+
+    printf("Duque de Caxias tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D3);
+    printf("Nova Iguaçu tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_D4);
+    if (numero_de_pontos_turisticos_D3 > numero_de_pontos_turisticos_D4 ){
+        printf("Duque de Caxias vence em nº de pontos turísticos\n");
+        resultado2D3eD4 = 1;
+    } else{
+        printf("Nova Iguaçu vence em nº de pontos turísticos\n");
+        resultado2D3eD4 = 0;
+    }
+    break;
+
+    case 2:
+
+    printf("Duque de Caxias tem de população: %d\n", populacao_D3);
+    printf("Nova Iguaçu tem de população: %d\n", populacao_D4);
+    if (populacao_D3 > populacao_D4 ){
+        printf("Duque de Caxias vence em quantidade de população\n");
+        resultado2D3eD4 = 1;
+    } else{
+        printf("Nova Iguaçu vence em quantidade de população\n");
+        resultado2D3eD4 = 0;
+    }
+    break;
+    
+    case 3:
+
+    printf("Duque de Caxias tem área de: %d\n", area_D3);
+    printf("Nova Iguaçu tem área de: %d\n", area_D4);
+    if (area_D3 > area_D4 ){
+        printf("Duque de Caxias vence em área\n");
+        resultado2D3eD4 = 1;
+    } else{
+        printf("Nova Iguaçu vence em área\n");
+        resultado2D3eD4 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Duque de Caxias tem PIB de: %d\n", PIB_D3 );
+    printf("Nova Iguaçu tem PIB de: %d\n", PIB_D4);
+    if (PIB_D3  > PIB_D4 ){
+        printf("Duque de Caxias vence em PIB\n");
+        resultado2D3eD4 = 1;
+    } else{
+        printf("Nova Iguaçu vence em PIB\n");
+        resultado2D3eD4 = 0;
+    }
+    break;
+
+    case 5:
+
+    printf("Duque de Caxias tem densidade populacional de: %f\n", densidade_populacional_D3);
+    printf("Nova Iguaçu  tem densidade populacional de: %f\n", densidade_populacional_D4);
+    if (densidade_populacional_D3  < densidade_populacional_D4 ){
+        printf("Duque de Caxias vence em densidade populacional\n");
+        resultado2D3eD4 = 1;
+    } else{
+        printf("Nova Iguaçu  vence densidade populacional\n");
+        resultado2D3eD4 = 0;
+    }
+    break;
+
+    case 6:
+
+    printf("Duque de Caxias tem PIB per capita de: %f\n", pib_percapita_D3 );
+    printf("Nova Iguaçu  tem PIB per capita de: %f\n", pib_percapita_D4);
+    if (pib_percapita_D3 > pib_percapita_D4){
+        printf("Duque de Caxias vence em PIB per capita\n");
+        resultado2D3eD4 = 1;
+    } else{
+        printf("Nova Iguaçu  vence em PIB per capita\n");
+        resultado2D3eD4 = 0;
+    }
+    break;
+
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
     printf("Comparação entre Curitiba e Londrina\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -1426,8 +2198,12 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoE1eE2);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2E1eE2);
+    printf("\n");
+    
     
     switch(opcaoE1eE2)
     {
@@ -1435,12 +2211,12 @@ int main() {
 
     printf("Curitiba tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_E1);
     printf("Londrina tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_E2);
-    if (numero_de_pontos_turisticos_E1 == numero_de_pontos_turisticos_E2 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_E1 > numero_de_pontos_turisticos_E2 ){
+    if (numero_de_pontos_turisticos_E1 > numero_de_pontos_turisticos_E2 ){
         printf("Curitiba vence em nº de pontos turísticos\n");
+        resultado1E1eE2 = 1;
     } else{
         printf("Londrina vence em nº de pontos turísticos\n");
+        resultado1E1eE2 = 0;
     }
     break;
 
@@ -1448,12 +2224,12 @@ int main() {
 
     printf("Curitiba tem de população: %d\n", populacao_E1);
     printf("Londrina tem de população: %d\n", populacao_E2);
-    if (populacao_E1 == populacao_E2 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_E1 > populacao_E2 ){
+    if (populacao_E1 > populacao_E2 ){
         printf("Curitiba vence em quantidade de população\n");
+        resultado1E1eE2 = 1;
     } else{
         printf("Londrina vence em quantidade de população\n");
+        resultado1E1eE2 = 0;
     }
     break;
 
@@ -1461,12 +2237,12 @@ int main() {
 
     printf("Curitiba tem área de: %d\n", area_E1);
     printf("Londrina tem área de: %d\n", area_E2);
-    if (area_E1 == area_E2 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_E1 > area_E2 ){
+    if (area_E1 > area_E2 ){
         printf("Curitiba vence em área\n");
+        resultado1E1eE2 = 1;
     } else{
         printf("Londrina vence em área\n");
+        resultado1E1eE2 = 0;
     }
     break;
 
@@ -1474,12 +2250,12 @@ int main() {
 
     printf("Curitiba tem PIB de: %d\n", PIB_E1 );
     printf("Londrina tem PIB de: %d\n", PIB_E2);
-    if (PIB_E1  == PIB_E2 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_E1  > PIB_E2 ){
+    if (PIB_E1  > PIB_E2 ){
         printf("Curitiba vence em PIB\n");
+        resultado1E1eE2 = 1;
     } else{
         printf("Londrina vence em PIB\n");
+        resultado1E1eE2 = 0;
     }
     break;
 
@@ -1487,12 +2263,12 @@ int main() {
 
     printf("Curitiba tem densidade populacional de: %f\n", densidade_populacional_E1);
     printf("Londrina tem densidade populacional de: %f\n", densidade_populacional_E2);
-    if (densidade_populacional_E1  == densidade_populacional_E2 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_E1  < densidade_populacional_E2 ){
+    if (densidade_populacional_E1  < densidade_populacional_E2 ){
         printf("Curitiba vence em densidade populacional\n");
+        resultado1E1eE2 = 1;
     } else{
         printf("Londrina vence densidade populacional\n");
+        resultado1E1eE2 = 0;
     }
     break;
 
@@ -1500,12 +2276,12 @@ int main() {
 
     printf("Curitiba tem PIB per capita de: %f\n", pib_percapita_E1 );
     printf("Londrina tem PIB per capita de: %f\n", pib_percapita_E2);
-    if (pib_percapita_E1 == pib_percapita_E2){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_E1 > pib_percapita_E2){
+    if (pib_percapita_E1 > pib_percapita_E2){
         printf("Curitiba vence em PIB per capita\n");
+        resultado1E1eE2 = 1;
     } else{
         printf("Londrina vence em PIB per capita\n");
+        resultado1E1eE2 = 0;
     }
     break;
 
@@ -1513,6 +2289,93 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2E1eE2)
+    {
+    case 1:
+
+    printf("Curitiba tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_E1);
+    printf("Londrina tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_E2);
+    if (numero_de_pontos_turisticos_E1 > numero_de_pontos_turisticos_E2 ){
+        printf("Curitiba vence em nº de pontos turísticos\n");
+        resultado2E1eE2 = 1;
+    } else{
+        printf("Londrina vence em nº de pontos turísticos\n");
+        resultado2E1eE2 = 0;
+    }
+    break;
+
+    case 2:
+
+    printf("Curitiba tem de população: %d\n", populacao_E1);
+    printf("Londrina tem de população: %d\n", populacao_E2);
+    if (populacao_E1 > populacao_E2 ){
+        printf("Curitiba vence em quantidade de população\n");
+        resultado2E1eE2 = 1;
+    } else{
+        printf("Londrina vence em quantidade de população\n");
+        resultado2E1eE2 = 0;
+    }
+    break;
+
+    case 3:
+
+    printf("Curitiba tem área de: %d\n", area_E1);
+    printf("Londrina tem área de: %d\n", area_E2);
+    if (area_E1 > area_E2 ){
+        printf("Curitiba vence em área\n");
+        resultado2E1eE2 = 1;
+    } else{
+        printf("Londrina vence em área\n");
+        resultado2E1eE2 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Curitiba tem PIB de: %d\n", PIB_E1 );
+    printf("Londrina tem PIB de: %d\n", PIB_E2);
+    if (PIB_E1  > PIB_E2 ){
+        printf("Curitiba vence em PIB\n");
+        resultado2E1eE2 = 1;
+    } else{
+        printf("Londrina vence em PIB\n");
+        resultado2E1eE2 = 0;
+    }
+    break;
+
+    case 5:
+
+    printf("Curitiba tem densidade populacional de: %f\n", densidade_populacional_E1);
+    printf("Londrina tem densidade populacional de: %f\n", densidade_populacional_E2);
+    if (densidade_populacional_E1  < densidade_populacional_E2 ){
+        printf("Curitiba vence em densidade populacional\n");
+        resultado2E1eE2 = 1;
+    } else{
+        printf("Londrina vence densidade populacional\n");
+        resultado2E1eE2 = 0;
+    }
+    break;
+
+    case 6:
+
+    printf("Curitiba tem PIB per capita de: %f\n", pib_percapita_E1 );
+    printf("Londrina tem PIB per capita de: %f\n", pib_percapita_E2);
+    if (pib_percapita_E1 > pib_percapita_E2){
+        printf("Curitiba vence em PIB per capita\n");
+        resultado2E1eE2 = 1;
+    } else{
+        printf("Londrina vence em PIB per capita\n");
+        resultado2E1eE2 = 0;
+    }
+    break;
+
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
     printf("Comparação entre Maringa e Ponta Grossa\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -1522,8 +2385,12 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoE3eE4);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2E3eE4);
+    printf("\n");
+    
     
     switch(opcaoE3eE4)
     {
@@ -1531,12 +2398,12 @@ int main() {
 
     printf("Maringa tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_E3);
     printf("Ponta Grossa tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_E4);
-    if (numero_de_pontos_turisticos_E3 == numero_de_pontos_turisticos_E4 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_E3 > numero_de_pontos_turisticos_E4 ){
+    if (numero_de_pontos_turisticos_E3 > numero_de_pontos_turisticos_E4 ){
         printf("Maringa vence em nº de pontos turísticos\n");
+        resultado1E3eE4 = 1;
     } else{
         printf("Ponta Grossa vence em nº de pontos turísticos\n");
+        resultado1E3eE4 = 0;
     }
     break;
 
@@ -1544,12 +2411,12 @@ int main() {
 
     printf("Maringa tem de população: %d\n", populacao_E3);
     printf("Ponta Grossa tem de população: %d\n", populacao_E4);
-    if (populacao_E3 == populacao_E4 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_E3 > populacao_E4 ){
+    if (populacao_E3 > populacao_E4 ){
         printf("Maringa vence em quantidade de população\n");
+        resultado1E3eE4 = 1;
     } else{
         printf("Ponta Grossa vence em quantidade de população\n");
+        resultado1E3eE4 = 0;
     }
     break;
 
@@ -1557,12 +2424,12 @@ int main() {
 
     printf("Maringa tem área de: %d\n", area_E3);
     printf("Ponta Grossa tem área de: %d\n", area_E4);
-    if (area_E3 == area_E4 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_E3 > area_E4 ){
+    if (area_E3 > area_E4 ){
         printf("Maringa vence em área\n");
+        resultado1E3eE4 = 1;
     } else{
         printf("Ponta Grossa vence em área\n");
+        resultado1E3eE4 = 0;
     }
     break;
 
@@ -1570,12 +2437,12 @@ int main() {
 
     printf("Maringa tem PIB de: %d\n", PIB_E3 );
     printf("Ponta Grossa tem PIB de: %d\n", PIB_E4);
-    if (PIB_E3  == PIB_E4 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_E3  > PIB_E4 ){
+    if (PIB_E3  > PIB_E4 ){
         printf("Maringa vence em PIB\n");
+        resultado1E3eE4 = 1;
     } else{
         printf("Ponta Grossa vence em PIB\n");
+        resultado1E3eE4 = 0;
     }
     break;
 
@@ -1583,12 +2450,12 @@ int main() {
 
     printf("Maringa tem densidade populacional de: %f\n", densidade_populacional_E3);
     printf("Ponta Grossa  tem densidade populacional de: %f\n", densidade_populacional_E4);
-    if (densidade_populacional_E3 == densidade_populacional_E4 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_E3  < densidade_populacional_E4 ){
+    if (densidade_populacional_E3  < densidade_populacional_E4 ){
         printf("Maringa vence em densidade populacional\n");
+        resultado1E3eE4 = 1;
     } else{
         printf("Ponta Grossa vence densidade populacional\n");
+        resultado1E3eE4 = 0;
     }
     break;
 
@@ -1596,12 +2463,12 @@ int main() {
 
     printf("Maringa tem PIB per capita de: %f\n", pib_percapita_E3 );
     printf("Ponta Grossa  tem PIB per capita de: %f\n", pib_percapita_E4);
-    if (pib_percapita_E3 == pib_percapita_E4){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_E3 > pib_percapita_E4){
+    if (pib_percapita_E3 > pib_percapita_E4){
         printf("Maringa vence em PIB per capita\n");
+        resultado1E3eE4 = 1;
     } else{
         printf("Ponta Grossa vence em PIB per capita\n");
+        resultado1E3eE4 = 0;
     }
     break;
 
@@ -1609,6 +2476,93 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2E3eE4)
+    {
+    case 1:
+
+    printf("Maringa tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_E3);
+    printf("Ponta Grossa tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_E4);
+    if (numero_de_pontos_turisticos_E3 > numero_de_pontos_turisticos_E4 ){
+        printf("Maringa vence em nº de pontos turísticos\n");
+        resultado2E3eE4 = 1;
+    } else{
+        printf("Ponta Grossa vence em nº de pontos turísticos\n");
+        resultado2E3eE4 = 0;
+    }
+    break;
+
+    case 2:
+
+    printf("Maringa tem de população: %d\n", populacao_E3);
+    printf("Ponta Grossa tem de população: %d\n", populacao_E4);
+    if (populacao_E3 > populacao_E4 ){
+        printf("Maringa vence em quantidade de população\n");
+        resultado2E3eE4 = 1;
+    } else{
+        printf("Ponta Grossa vence em quantidade de população\n");
+        resultado2E3eE4 = 0;
+    }
+    break;
+
+    case 3:
+
+    printf("Maringa tem área de: %d\n", area_E3);
+    printf("Ponta Grossa tem área de: %d\n", area_E4);
+    if (area_E3 > area_E4 ){
+        printf("Maringa vence em área\n");
+        resultado2E3eE4 = 1;
+    } else{
+        printf("Ponta Grossa vence em área\n");
+        resultado2E3eE4 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Maringa tem PIB de: %d\n", PIB_E3 );
+    printf("Ponta Grossa tem PIB de: %d\n", PIB_E4);
+    if (PIB_E3  > PIB_E4 ){
+        printf("Maringa vence em PIB\n");
+        resultado2E3eE4 = 1;
+    } else{
+        printf("Ponta Grossa vence em PIB\n");
+        resultado2E3eE4 = 0;
+    }
+    break;
+
+    case 5:
+
+    printf("Maringa tem densidade populacional de: %f\n", densidade_populacional_E3);
+    printf("Ponta Grossa  tem densidade populacional de: %f\n", densidade_populacional_E4);
+    if (densidade_populacional_E3  < densidade_populacional_E4 ){
+        printf("Maringa vence em densidade populacional\n");
+        resultado2E3eE4 = 1;
+    } else{
+        printf("Ponta Grossa vence densidade populacional\n");
+        resultado2E3eE4 = 0;
+    }
+    break;
+
+    case 6:
+
+    printf("Maringa tem PIB per capita de: %f\n", pib_percapita_E3 );
+    printf("Ponta Grossa  tem PIB per capita de: %f\n", pib_percapita_E4);
+    if (pib_percapita_E3 > pib_percapita_E4){
+        printf("Maringa vence em PIB per capita\n");
+        resultado2E3eE4 = 1;
+    } else{
+        printf("Ponta Grossa vence em PIB per capita\n");
+        resultado2E3eE4 = 0;
+    }
+    break;
+
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
 
     printf("Comparação entre Belo Horizonte e Uberlandia\n");
@@ -1619,8 +2573,12 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoF1eF2);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2F1eF2);
+    printf("\n");
+    
     
     switch(opcaoF1eF2)
     {
@@ -1628,12 +2586,12 @@ int main() {
 
     printf("Belo Horizonte tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_F1);
     printf("Uberlandia tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_F2);
-    if (numero_de_pontos_turisticos_F1 == numero_de_pontos_turisticos_F2 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_F1 > numero_de_pontos_turisticos_F2 ){
+    if (numero_de_pontos_turisticos_F1 > numero_de_pontos_turisticos_F2 ){
         printf("Belo Horizonte vence em nº de pontos turísticos\n");
+        resultado1F1eF2 = 1;
     } else{
         printf("Uberlandia vence em nº de pontos turísticos\n");
+        resultado1F1eF2 = 0;
     }
     break;
 
@@ -1641,12 +2599,12 @@ int main() {
 
     printf("Belo Horizonte tem de população: %d\n", populacao_F1);
     printf("Uberlandia tem de população: %d\n", populacao_F2);
-    if (populacao_F1 == populacao_F2 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_F1 > populacao_F2 ){
+    if (populacao_F1 > populacao_F2 ){
         printf("Belo Horizonte vence em quantidade de população\n");
+        resultado1F1eF2 = 1;
     } else{
         printf("Uberlandia vence em quantidade de população\n");
+        resultado1F1eF2 = 0;
     }
     break;
 
@@ -1654,12 +2612,12 @@ int main() {
 
     printf("Belo Horizonte tem área de: %d\n", area_F1);
     printf("Uberlandia tem área de: %d\n", area_F2);
-    if (area_F1 == area_F2 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_F1 > area_F2 ){
+    if (area_F1 > area_F2 ){
         printf("Belo Horizonte vence em área\n");
+        resultado1F1eF2 = 1;
     } else{
         printf("Uberlandia vence em área\n");
+        resultado1F1eF2 = 0;
     }
     break;
 
@@ -1667,12 +2625,12 @@ int main() {
 
     printf("Belo Horizonte tem PIB de: %d\n", PIB_F1 );
     printf("Uberlandia tem PIB de: %d\n", PIB_F2);
-    if (PIB_F1  == PIB_F2 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_F1  > PIB_F2 ){
+    if (PIB_F1  > PIB_F2 ){
         printf("Belo Horizonte vence em PIB\n");
+        resultado1F1eF2 = 1;
     } else{
         printf("Uberlandia vence em PIB\n");
+        resultado1F1eF2 = 0;
     }
     break;
 
@@ -1680,12 +2638,12 @@ int main() {
 
     printf("Belo Horizonte tem densidade populacional de: %f\n", densidade_populacional_F1);
     printf("Uberlandia tem densidade populacional de: %f\n", densidade_populacional_F2);
-    if (densidade_populacional_F1 == densidade_populacional_F2 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_F1  < densidade_populacional_F2 ){
+    if (densidade_populacional_F1  < densidade_populacional_F2 ){
         printf("Belo Horizonte vence em densidade populacional\n");
+        resultado1F1eF2 = 1;
     } else{
         printf("Uberlandia vence densidade populacional\n");
+        resultado1F1eF2 = 0;
     }
     break;
 
@@ -1693,12 +2651,12 @@ int main() {
 
     printf("Belo Horizonte tem PIB per capita de: %f\n", pib_percapita_F1 );
     printf("Uberlandia tem PIB per capita de: %f\n", pib_percapita_F2);
-    if (pib_percapita_F1 == pib_percapita_F2){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_F1 > pib_percapita_F2){
+    if (pib_percapita_F1 > pib_percapita_F2){
         printf("Belo Horizonte vence em PIB per capita\n");
+        resultado1F1eF2 = 1;
     } else{
         printf("Uberlandia vence em PIB per capita\n");
+        resultado1F1eF2 = 0;
     }
     break;
 
@@ -1706,6 +2664,93 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2F1eF2)
+    {
+    case 1:
+
+    printf("Belo Horizonte tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_F1);
+    printf("Uberlandia tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_F2);
+    if (numero_de_pontos_turisticos_F1 > numero_de_pontos_turisticos_F2 ){
+        printf("Belo Horizonte vence em nº de pontos turísticos\n");
+        resultado2F1eF2 = 1;
+    } else{
+        printf("Uberlandia vence em nº de pontos turísticos\n");
+        resultado2F1eF2 = 0;
+    }
+    break;
+
+    case 2:
+
+    printf("Belo Horizonte tem de população: %d\n", populacao_F1);
+    printf("Uberlandia tem de população: %d\n", populacao_F2);
+    if (populacao_F1 > populacao_F2 ){
+        printf("Belo Horizonte vence em quantidade de população\n");
+        resultado2F1eF2 = 1;
+    } else{
+        printf("Uberlandia vence em quantidade de população\n");
+        resultado2F1eF2 = 0;
+    }
+    break;
+
+    case 3:
+
+    printf("Belo Horizonte tem área de: %d\n", area_F1);
+    printf("Uberlandia tem área de: %d\n", area_F2);
+    if (area_F1 > area_F2 ){
+        printf("Belo Horizonte vence em área\n");
+        resultado2F1eF2 = 1;
+    } else{
+        printf("Uberlandia vence em área\n");
+        resultado2F1eF2 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Belo Horizonte tem PIB de: %d\n", PIB_F1 );
+    printf("Uberlandia tem PIB de: %d\n", PIB_F2);
+    if (PIB_F1  > PIB_F2 ){
+        printf("Belo Horizonte vence em PIB\n");
+        resultado2F1eF2 = 1;
+    } else{
+        printf("Uberlandia vence em PIB\n");
+        resultado2F1eF2 = 0;
+    }
+    break;
+
+    case 5:
+
+    printf("Belo Horizonte tem densidade populacional de: %f\n", densidade_populacional_F1);
+    printf("Uberlandia tem densidade populacional de: %f\n", densidade_populacional_F2);
+    if (densidade_populacional_F1  < densidade_populacional_F2 ){
+        printf("Belo Horizonte vence em densidade populacional\n");
+        resultado2F1eF2 = 1;
+    } else{
+        printf("Uberlandia vence densidade populacional\n");
+        resultado2F1eF2 = 0;
+    }
+    break;
+
+    case 6:
+
+    printf("Belo Horizonte tem PIB per capita de: %f\n", pib_percapita_F1 );
+    printf("Uberlandia tem PIB per capita de: %f\n", pib_percapita_F2);
+    if (pib_percapita_F1 > pib_percapita_F2){
+        printf("Belo Horizonte vence em PIB per capita\n");
+        resultado2F1eF2 = 1;
+    } else{
+        printf("Uberlandia vence em PIB per capita\n");
+        resultado2F1eF2 = 0;
+    }
+    break;
+
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
     printf("Comparação entre Contagem e Juiz de Fora\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -1715,8 +2760,11 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoF3eF4);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2F3eF4);
+    printf("\n");
     
     switch(opcaoF3eF4)
     {
@@ -1724,12 +2772,12 @@ int main() {
 
     printf("Contagem tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_F3);
     printf("Juiz de Fora tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_F4);
-    if (numero_de_pontos_turisticos_F3 == numero_de_pontos_turisticos_F4 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_F3 > numero_de_pontos_turisticos_F4 ){
+    if (numero_de_pontos_turisticos_F3 > numero_de_pontos_turisticos_F4 ){
         printf("Contagem vence em nº de pontos turísticos\n");
+        resultado1F3eF4 = 1;
     } else{
         printf("Juiz de Fora vence em nº de pontos turísticos\n");
+        resultado1F3eF4 = 0;
     }
     break;
 
@@ -1737,12 +2785,12 @@ int main() {
 
     printf("Contagem tem de população: %d\n", populacao_F3);
     printf("Juiz de Fora tem de população: %d\n", populacao_F4);
-    if (populacao_F3 == populacao_F4 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_F3 > populacao_F4 ){
+    if (populacao_F3 > populacao_F4 ){
         printf("Contagem vence em quantidade de população\n");
+        resultado1F3eF4 = 1;
     } else{
         printf("Juiz de Fora vence em quantidade de população\n");
+        resultado1F3eF4 = 0;
     }
     break;
 
@@ -1750,12 +2798,12 @@ int main() {
 
     printf("Contagem tem área de: %d\n", area_F3);
     printf("Juiz de Fora tem área de: %d\n", area_F4);
-    if (area_F3 == area_F4 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_F3 > area_F4 ){
+    if (area_F3 > area_F4 ){
         printf("Contagem vence em área\n");
+        resultado1F3eF4 = 1;
     } else{
         printf("Juiz de Fora vence em área\n");
+        resultado1F3eF4 = 0;
     }
     break;
 
@@ -1763,12 +2811,12 @@ int main() {
 
     printf("Contagem tem PIB de: %d\n", PIB_F3 );
     printf("Juiz de Fora tem PIB de: %d\n", PIB_F4);
-    if (PIB_F3 == PIB_F4 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_F3  > PIB_F4 ){
+    if (PIB_F3  > PIB_F4 ){
         printf("Contagem vence em PIB\n");
+        resultado1F3eF4 = 1;
     } else{
         printf("Juiz de Fora vence em PIB\n");
+        resultado1F3eF4 = 0;
     }
     break;
 
@@ -1776,12 +2824,12 @@ int main() {
 
     printf("Contagem tem densidade populacional de: %f\n", densidade_populacional_F3);
     printf("Juiz de Fora  tem densidade populacional de: %f\n", densidade_populacional_F4);
-    if (densidade_populacional_F3 == densidade_populacional_F4 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_F3  < densidade_populacional_F4 ){
+    if (densidade_populacional_F3  < densidade_populacional_F4 ){
         printf("Contagem vence em densidade populacional\n");
+        resultado1F3eF4 = 1;
     } else{
         printf("Juiz de Fora vence densidade populacional\n");
+        resultado1F3eF4 = 0;
     }
     break;
 
@@ -1789,12 +2837,12 @@ int main() {
 
     printf("Contagem tem PIB per capita de: %f\n", pib_percapita_F3 );
     printf("Juiz de Fora  tem PIB per capita de: %f\n", pib_percapita_F4);
-    if (pib_percapita_F3 == pib_percapita_F4){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_F3 > pib_percapita_F4){
+    if (pib_percapita_F3 > pib_percapita_F4){
         printf("Contagem vence em PIB per capita\n");
+        resultado1F3eF4 = 1;
     } else{
         printf("Juiz de Fora vence em PIB per capita\n");
+        resultado1F3eF4 = 0;
     } 
     break;
 
@@ -1802,6 +2850,93 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2F3eF4)
+    {
+    case 1:
+
+    printf("Contagem tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_F3);
+    printf("Juiz de Fora tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_F4);
+    if (numero_de_pontos_turisticos_F3 > numero_de_pontos_turisticos_F4 ){
+        printf("Contagem vence em nº de pontos turísticos\n");
+        resultado2F3eF4 = 1;
+    } else{
+        printf("Juiz de Fora vence em nº de pontos turísticos\n");
+        resultado2F3eF4 = 0;
+    }
+    break;
+
+    case 2:
+
+    printf("Contagem tem de população: %d\n", populacao_F3);
+    printf("Juiz de Fora tem de população: %d\n", populacao_F4);
+    if (populacao_F3 > populacao_F4 ){
+        printf("Contagem vence em quantidade de população\n");
+        resultado2F3eF4 = 1;
+    } else{
+        printf("Juiz de Fora vence em quantidade de população\n");
+        resultado2F3eF4 = 0;
+    }
+    break;
+
+    case 3:
+
+    printf("Contagem tem área de: %d\n", area_F3);
+    printf("Juiz de Fora tem área de: %d\n", area_F4);
+    if (area_F3 > area_F4 ){
+        printf("Contagem vence em área\n");
+        resultado2F3eF4 = 1;
+    } else{
+        printf("Juiz de Fora vence em área\n");
+        resultado2F3eF4 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Contagem tem PIB de: %d\n", PIB_F3 );
+    printf("Juiz de Fora tem PIB de: %d\n", PIB_F4);
+    if (PIB_F3  > PIB_F4 ){
+        printf("Contagem vence em PIB\n");
+        resultado2F3eF4 = 1;
+    } else{
+        printf("Juiz de Fora vence em PIB\n");
+        resultado2F3eF4 = 0;
+    }
+    break;
+
+    case 5:
+
+    printf("Contagem tem densidade populacional de: %f\n", densidade_populacional_F3);
+    printf("Juiz de Fora  tem densidade populacional de: %f\n", densidade_populacional_F4);
+    if (densidade_populacional_F3  < densidade_populacional_F4 ){
+        printf("Contagem vence em densidade populacional\n");
+        resultado2F3eF4 = 1;
+    } else{
+        printf("Juiz de Fora vence densidade populacional\n");
+        resultado2F3eF4 = 0;
+    }
+    break;
+
+    case 6:
+
+    printf("Contagem tem PIB per capita de: %f\n", pib_percapita_F3 );
+    printf("Juiz de Fora  tem PIB per capita de: %f\n", pib_percapita_F4);
+    if (pib_percapita_F3 > pib_percapita_F4){
+        printf("Contagem vence em PIB per capita\n");
+        resultado2F3eF4 = 1;
+    } else{
+        printf("Juiz de Fora vence em PIB per capita\n");
+        resultado2F3eF4 = 0;
+    } 
+    break;
+
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
     printf("Comparação entre Manaus e Itacoatiara\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -1811,8 +2946,11 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoG1eG2);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2G1eG2);
+    printf("\n");
     
     switch(opcaoG1eG2)
     {
@@ -1820,12 +2958,12 @@ int main() {
 
     printf("Manaus tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_G1);
     printf("Itacoatiara tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_G2);
-    if (numero_de_pontos_turisticos_G1 == numero_de_pontos_turisticos_G2 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_G1 > numero_de_pontos_turisticos_G2 ){
+    if (numero_de_pontos_turisticos_G1 > numero_de_pontos_turisticos_G2 ){
         printf("Manaus vence em nº de pontos turísticos\n");
+        resultado1G1eG2 = 1;
     } else{
         printf("Itacoatiara vence em nº de pontos turísticos\n");
+        resultado1G1eG2 = 0;
     }
     break;
 
@@ -1833,12 +2971,12 @@ int main() {
 
     printf("Manaus tem de população: %d\n", populacao_G1);
     printf("Itacoatiara tem de população: %d\n", populacao_G2);
-    if (populacao_G1 == populacao_G2 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_G1 > populacao_G2 ){
+    if (populacao_G1 > populacao_G2 ){
         printf("Manaus vence em quantidade de população\n");
+        resultado1G1eG2 = 1;
     } else{
         printf("Itacoatiara vence em quantidade de população\n");
+        resultado1G1eG2 = 0;
     }
     break;
 
@@ -1846,12 +2984,12 @@ int main() {
 
     printf("Manaus tem área de: %d\n", area_G1);
     printf("Itacoatiara tem área de: %d\n", area_G2);
-    if (area_G1 == area_G2 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_G1 > area_G2 ){
+    if (area_G1 > area_G2 ){
         printf("Manaus vence em área\n");
+        resultado1G1eG2 = 1;
     } else{
         printf("Itacoatiara vence em área\n");
+        resultado1G1eG2 = 0;
     }
     break;
 
@@ -1859,12 +2997,12 @@ int main() {
 
     printf("Manaus tem PIB de: %d\n", PIB_G1 );
     printf("Itacoatiara tem PIB de: %d\n", PIB_G2);
-    if (PIB_G1 == PIB_G2 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_G1  > PIB_G2 ){
+    if (PIB_G1  > PIB_G2 ){
         printf("Manaus vence em PIB\n");
+        resultado1G1eG2 = 1;
     } else{
         printf("Itacoatiara vence em PIB\n");
+        resultado1G1eG2 = 0;
     }
     break;
 
@@ -1872,12 +3010,12 @@ int main() {
 
     printf("Manaus tem densidade populacional de: %f\n", densidade_populacional_G1);
     printf("Itacoatiara  tem densidade populacional de: %f\n", densidade_populacional_G2);
-    if (densidade_populacional_G1 == densidade_populacional_G2 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_G1  < densidade_populacional_G2 ){
+    if (densidade_populacional_G1  < densidade_populacional_G2 ){
         printf("Manaus vence em densidade populacional\n");
+        resultado1G1eG2 = 1;
     } else{
         printf("Itacoatiara vence densidade populacional\n");
+        resultado1G1eG2 = 0;
     }
     break;
 
@@ -1885,10 +3023,12 @@ int main() {
 
     printf("Manaus tem PIB per capita de: %f\n", pib_percapita_G1 );
     printf("Itacoatiara tem PIB per capita de: %f\n", pib_percapita_G2);
-    if (pib_percapita_G1 == pib_percapita_G2){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
+    if (pib_percapita_G1 > pib_percapita_G2){
+        printf("Manaus vence em PIB per capita\n");
+        resultado1G1eG2 = 1;
     } else {
         printf("Itacoatiara vence em PIB per capita\n");
+        resultado1G1eG2 = 0;
     } 
     break;
 
@@ -1896,7 +3036,93 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
-    
+    printf("\n");
+
+    switch(opcao2G1eG2)
+    {
+    case 1:
+
+    printf("Manaus tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_G1);
+    printf("Itacoatiara tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_G2);
+    if (numero_de_pontos_turisticos_G1 > numero_de_pontos_turisticos_G2 ){
+        printf("Manaus vence em nº de pontos turísticos\n");
+        resultado2G1eG2 = 1;
+    } else{
+        printf("Itacoatiara vence em nº de pontos turísticos\n");
+        resultado2G1eG2 = 0;
+    }
+    break;
+
+    case 2:
+
+    printf("Manaus tem de população: %d\n", populacao_G1);
+    printf("Itacoatiara tem de população: %d\n", populacao_G2);
+    if (populacao_G1 > populacao_G2 ){
+        printf("Manaus vence em quantidade de população\n");
+        resultado2G1eG2 = 1;
+    } else{
+        printf("Itacoatiara vence em quantidade de população\n");
+        resultado2G1eG2 = 0;
+    }
+    break;
+
+    case 3:
+
+    printf("Manaus tem área de: %d\n", area_G1);
+    printf("Itacoatiara tem área de: %d\n", area_G2);
+    if (area_G1 > area_G2 ){
+        printf("Manaus vence em área\n");
+        resultado2G1eG2 = 1;
+    } else{
+        printf("Itacoatiara vence em área\n");
+        resultado2G1eG2 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Manaus tem PIB de: %d\n", PIB_G1 );
+    printf("Itacoatiara tem PIB de: %d\n", PIB_G2);
+    if (PIB_G1  > PIB_G2 ){
+        printf("Manaus vence em PIB\n");
+        resultado2G1eG2 = 1;
+    } else{
+        printf("Itacoatiara vence em PIB\n");
+        resultado2G1eG2 = 0;
+    }
+    break;
+
+    case 5:
+
+    printf("Manaus tem densidade populacional de: %f\n", densidade_populacional_G1);
+    printf("Itacoatiara  tem densidade populacional de: %f\n", densidade_populacional_G2);
+    if (densidade_populacional_G1  < densidade_populacional_G2 ){
+        printf("Manaus vence em densidade populacional\n");
+        resultado2G1eG2 = 1;
+    } else{
+        printf("Itacoatiara vence densidade populacional\n");
+        resultado2G1eG2 = 0;
+    }
+    break;
+
+    case 6:
+
+    printf("Manaus tem PIB per capita de: %f\n", pib_percapita_G1 );
+    printf("Itacoatiara tem PIB per capita de: %f\n", pib_percapita_G2);
+    if (pib_percapita_G1 > pib_percapita_G2){
+        printf("Manaus vence em PIB per capita\n");
+        resultado2G1eG2 = 1;
+    } else {
+        printf("Itacoatiara vence em PIB per capita\n");
+        resultado2G1eG2 = 0;
+    } 
+    break;
+
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
     printf("Comparação entre Manacapuru e Parintins\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -1906,8 +3132,11 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoG3eG4);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2G3eG4);
+    printf("\n");
     
     switch(opcaoG3eG4)
     {
@@ -1915,12 +3144,12 @@ int main() {
 
     printf("Manacapuru tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_G3);
     printf("Parintins tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_G4);
-    if (numero_de_pontos_turisticos_G3 == numero_de_pontos_turisticos_G4 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_G3 > numero_de_pontos_turisticos_G4 ){
+    if (numero_de_pontos_turisticos_G3 > numero_de_pontos_turisticos_G4 ){
         printf("Manacapuru vence em nº de pontos turísticos\n");
+        resultado1G3eG4 = 1;
     } else{
         printf("Parintins vence em nº de pontos turísticos\n");
+        resultado1G3eG4 = 0;
     }
     break;
 
@@ -1929,11 +3158,11 @@ int main() {
     printf("Manacapuru tem de população: %d\n", populacao_G3);
     printf("Parintins tem de população: %d\n", populacao_G4);
     if (populacao_G3 == populacao_G4 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_G3 == populacao_G4 ){
         printf("Manacapuru vence em quantidade de população\n");
+        resultado1G3eG4 = 1;
     } else{
         printf("Parintins vence em quantidade de população\n");
+        resultado1G3eG4 = 0;
     }
     break;
 
@@ -1941,12 +3170,12 @@ int main() {
 
     printf("Manacapuru tem área de: %d\n", area_G3);
     printf("Parintins tem área de: %d\n", area_G4);
-    if (area_G3 == area_G4 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_G3 > area_G4 ){
+    if (area_G3 > area_G4 ){
         printf("Manacapuru vence em área\n");
+        resultado1G3eG4 = 1;
     } else{
         printf("Parintins vence em área\n");
+        resultado1G3eG4 = 0;
     }
     break;
 
@@ -1954,12 +3183,12 @@ int main() {
 
     printf("Manacapuru tem PIB de: %d\n", PIB_G3 );
     printf("Parintins tem PIB de: %d\n", PIB_G4);
-    if (PIB_G3 == PIB_G4 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_G3  > PIB_G4 ){
+    if (PIB_G3  > PIB_G4 ){
         printf("Manacapuru vence em PIB\n");
+        resultado1G3eG4 = 1;
     } else{
         printf("Parintins vence em PIB\n");
+        resultado1G3eG4 = 0;
     }
     break;
 
@@ -1967,12 +3196,12 @@ int main() {
 
     printf("Manacapuru tem densidade populacional de: %f\n", densidade_populacional_G3);
     printf("Parintins tem densidade populacional de: %f\n", densidade_populacional_G4);
-    if (densidade_populacional_G3 == densidade_populacional_G4 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_G3  < densidade_populacional_G4 ){
+    if (densidade_populacional_G3  < densidade_populacional_G4 ){
         printf("Manacapuru vence em densidade populacional\n");
+        resultado1G3eG4 = 1;
     } else{
         printf("Parintins vence densidade populacional\n");
+        resultado1G3eG4 = 0;
     }
     break;
 
@@ -1980,12 +3209,12 @@ int main() {
 
     printf("Manacapuru tem PIB per capita de: %f\n", pib_percapita_G3 );
     printf("Parintins tem PIB per capita de: %f\n", pib_percapita_G4);
-    if (pib_percapita_G3 == pib_percapita_G4){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_G3 > pib_percapita_G4){
+    if (pib_percapita_G3 > pib_percapita_G4){
         printf("Manacapuru vence em PIB per capita\n");
+        resultado1G3eG4 = 1;
     } else{
         printf("Parintins vence em PIB per capita\n");
+        resultado1G3eG4 = 0;
     } 
     break;
 
@@ -1993,6 +3222,94 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2G3eG4)
+    {
+    case 1:
+
+    printf("Manacapuru tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_G3);
+    printf("Parintins tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_G4);
+    if (numero_de_pontos_turisticos_G3 > numero_de_pontos_turisticos_G4 ){
+        printf("Manacapuru vence em nº de pontos turísticos\n");
+        resultado2G3eG4 = 1;
+    } else{
+        printf("Parintins vence em nº de pontos turísticos\n");
+        resultado2G3eG4 = 0;
+    }
+    break;
+
+    case 2:
+
+    printf("Manacapuru tem de população: %d\n", populacao_G3);
+    printf("Parintins tem de população: %d\n", populacao_G4);
+    if (populacao_G3 == populacao_G4 ){
+        printf("Manacapuru vence em quantidade de população\n");
+        resultado2G3eG4 = 1;
+    } else{
+        printf("Parintins vence em quantidade de população\n");
+        resultado2G3eG4 = 0;
+    }
+    break;
+
+    case 3:
+
+    printf("Manacapuru tem área de: %d\n", area_G3);
+    printf("Parintins tem área de: %d\n", area_G4);
+    if (area_G3 > area_G4 ){
+        printf("Manacapuru vence em área\n");
+        resultado2G3eG4 = 1;
+    } else{
+        printf("Parintins vence em área\n");
+        resultado2G3eG4 = 0;
+    }
+    break;
+
+    case 4:
+
+    printf("Manacapuru tem PIB de: %d\n", PIB_G3 );
+    printf("Parintins tem PIB de: %d\n", PIB_G4);
+    if (PIB_G3  > PIB_G4 ){
+        printf("Manacapuru vence em PIB\n");
+        resultado2G3eG4 = 1;
+    } else{
+        printf("Parintins vence em PIB\n");
+        resultado2G3eG4 = 0;
+    }
+    break;
+
+    case 5:
+
+    printf("Manacapuru tem densidade populacional de: %f\n", densidade_populacional_G3);
+    printf("Parintins tem densidade populacional de: %f\n", densidade_populacional_G4);
+    if (densidade_populacional_G3  < densidade_populacional_G4 ){
+        printf("Manacapuru vence em densidade populacional\n");
+        resultado2G3eG4 = 1;
+    } else{
+        printf("Parintins vence densidade populacional\n");
+        resultado2G3eG4 = 0;
+    }
+    break;
+
+    case 6:
+
+    printf("Manacapuru tem PIB per capita de: %f\n", pib_percapita_G3 );
+    printf("Parintins tem PIB per capita de: %f\n", pib_percapita_G4);
+    if (pib_percapita_G3 > pib_percapita_G4){
+        printf("Manacapuru vence em PIB per capita\n");
+        resultado2G3eG4 = 1;
+    } else{
+        printf("Parintins vence em PIB per capita\n");
+        resultado2G3eG4 = 0;
+    } 
+    break;
+
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
+
 
     printf("Comparação entre Salvador e Feira de Santana\n");
     printf("Qual das opções de atributos abaixo quer comparar entre as cidades?\n");
@@ -2002,80 +3319,83 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoH1eH2);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2H1eH2);
+    printf("\n");
     
     switch(opcaoH1eH2)
     {
     case 1:
     printf("Salvador tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H1);
     printf("Feira de Santana tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H2);
-    if (numero_de_pontos_turisticos_H1 == numero_de_pontos_turisticos_H2 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_H1 > numero_de_pontos_turisticos_H2 ){
+    if (numero_de_pontos_turisticos_H1 > numero_de_pontos_turisticos_H2 ){
         printf("Salvador vence em nº de pontos turísticos\n");
+        resultado1H1eH2 = 1;
     } else{
         printf("Feira de Santana vence em nº de pontos turísticos\n");
+        resultado1H1eH2 = 0;
     }
     break;
 
     case 2:
     printf("Salvador tem de população: %d\n", populacao_H1);
     printf("Feira de Santana tem de população: %d\n", populacao_H2);
-    if (populacao_H1 == populacao_H2 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_H1 > populacao_H2 ){
+    if (populacao_H1 > populacao_H2 ){
         printf("Salvador vence em quantidade de população\n");
+        resultado1H1eH2 = 1;
     } else{
         printf("Feira de Santana vence em quantidade de população\n");
+        resultado1H1eH2 = 0;
     }
     break;
     
     case 3:
     printf("Salvador tem área de: %d\n", area_H1);
     printf("Feira de Santana tem área de: %d\n", area_H2);
-    if (area_H1 == area_H2 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_H1 > area_H2 ){
+    if (area_H1 > area_H2 ){
         printf("Salvador vence em área\n");
+        resultado1H1eH2 = 1;
     } else{
         printf("Feira de Santana vence em área\n");
+        resultado1H1eH2 = 0;
     }
     break;
 
     case 4:
     printf("Salvador tem PIB de: %d\n", PIB_H1 );
     printf("Feira de Santana tem PIB de: %d\n", PIB_H2);
-    if (PIB_H1 == PIB_H2 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_H1 > PIB_H2 ){
+    if (PIB_H1 > PIB_H2 ){
         printf("Salvador vence em PIB\n");
+        resultado1H1eH2 = 1;
     } else{
         printf("Feira de Santana vence em PIB\n");
+        resultado1H1eH2 = 0;
     }
     break;
 
     case 5:
     printf("Salvador tem densidade populacional de: %f\n", densidade_populacional_H1);
     printf("Feira de Santana tem densidade populacional de: %f\n", densidade_populacional_H2);
-    if (densidade_populacional_H1 == densidade_populacional_H2 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_H1  < densidade_populacional_H2 ){
+    if (densidade_populacional_H1  < densidade_populacional_H2 ){
         printf("Salvador vence em densidade populacional\n");
+        resultado1H1eH2 = 1;
     } else{
         printf("Feira de Santana vence densidade populacional\n");
+        resultado1H1eH2 = 0;
     }
     break;
     
     case 6:
     printf("Salvador tem PIB per capita de: %f\n", pib_percapita_H1 );
     printf("Feira de Santana  tem PIB per capita de: %f\n", pib_percapita_H2);
-    if (pib_percapita_H1 == pib_percapita_H2){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_H1 > pib_percapita_H2){
+    if (pib_percapita_H1 > pib_percapita_H2){
         printf("Salvador vence em PIB per capita\n");
+        resultado1H1eH2 = 1;
     } else{
         printf("Feira de Santana vence em PIB per capita\n");
+        resultado1H1eH2 = 0;
     } 
     break;
 
@@ -2083,6 +3403,87 @@ int main() {
             printf("Opção inválida\n");
     break;
     }
+    printf("\n");
+
+    switch(opcao2H1eH2)
+    {
+    case 1:
+    printf("Salvador tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H1);
+    printf("Feira de Santana tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H2);
+    if (numero_de_pontos_turisticos_H1 > numero_de_pontos_turisticos_H2 ){
+        printf("Salvador vence em nº de pontos turísticos\n");
+        resultado2H1eH2 = 1;
+    } else{
+        printf("Feira de Santana vence em nº de pontos turísticos\n");
+        resultado2H1eH2 = 0;
+    }
+    break;
+
+    case 2:
+    printf("Salvador tem de população: %d\n", populacao_H1);
+    printf("Feira de Santana tem de população: %d\n", populacao_H2);
+    if (populacao_H1 > populacao_H2 ){
+        printf("Salvador vence em quantidade de população\n");
+        resultado2H1eH2 = 1;
+    } else{
+        printf("Feira de Santana vence em quantidade de população\n");
+        resultado2H1eH2 = 0;
+    }
+    break;
+    
+    case 3:
+    printf("Salvador tem área de: %d\n", area_H1);
+    printf("Feira de Santana tem área de: %d\n", area_H2);
+    if (area_H1 > area_H2 ){
+        printf("Salvador vence em área\n");
+        resultado2H1eH2 = 1;
+    } else{
+        printf("Feira de Santana vence em área\n");
+        resultado2H1eH2 = 0;
+    }
+    break;
+
+    case 4:
+    printf("Salvador tem PIB de: %d\n", PIB_H1 );
+    printf("Feira de Santana tem PIB de: %d\n", PIB_H2);
+    if (PIB_H1 > PIB_H2 ){
+        printf("Salvador vence em PIB\n");
+        resultado2H1eH2 = 1;
+    } else{
+        printf("Feira de Santana vence em PIB\n");
+        resultado2H1eH2 = 0;
+    }
+    break;
+
+    case 5:
+    printf("Salvador tem densidade populacional de: %f\n", densidade_populacional_H1);
+    printf("Feira de Santana tem densidade populacional de: %f\n", densidade_populacional_H2);
+    if (densidade_populacional_H1  < densidade_populacional_H2 ){
+        printf("Salvador vence em densidade populacional\n");
+        resultado2H1eH2 = 1;
+    } else{
+        printf("Feira de Santana vence densidade populacional\n");
+        resultado2H1eH2 = 0;
+    }
+    break;
+    
+    case 6:
+    printf("Salvador tem PIB per capita de: %f\n", pib_percapita_H1 );
+    printf("Feira de Santana  tem PIB per capita de: %f\n", pib_percapita_H2);
+    if (pib_percapita_H1 > pib_percapita_H2){
+        printf("Salvador vence em PIB per capita\n");
+        resultado2H1eH2 = 1;
+    } else{
+        printf("Feira de Santana vence em PIB per capita\n");
+        resultado2H1eH2 = 0;
+    } 
+    break;
+
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
 
 
     printf("Comparação entre Vitória da Conquista e Camacari\n");
@@ -2093,80 +3494,163 @@ int main() {
     printf("4. PIB\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
-    printf("Digite o número da opção que quer comparar:\n");
+    printf("Digite o número da 1ª opção que quer comparar:\n");
     scanf("%d", &opcaoH3eH4);
+    printf("Digite o número da 2ª opção que quer comparar:\n");
+    scanf("%d", &opcao2H3eH4);
+    printf("\n");
     
     switch(opcaoH3eH4)
     {
     case 1:
     printf("Vitória da Conquista tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H3);
     printf("Camacari tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H4);
-    if (numero_de_pontos_turisticos_H3 == numero_de_pontos_turisticos_H4 ){
-        printf("EMPATE! As cidades tem nº de pontos turísticos igual.\n");
-    } else if (numero_de_pontos_turisticos_H3 > numero_de_pontos_turisticos_H4 ){
+    if (numero_de_pontos_turisticos_H3 > numero_de_pontos_turisticos_H4 ){
         printf("Vitória da Conquista vence em nº de pontos turísticos\n");
+        resultado1H3eH4 = 1;
     } else{
         printf("Camacari vence em nº de pontos turísticos\n");
+        resultado1H3eH4 = 0;
     }
     break;
 
     case 2:
     printf("Vitória da Conquista tem de população: %d\n", populacao_H3);
     printf("Camacari tem de população: %d\n", populacao_H4);
-    if (populacao_H3 == populacao_H4 ){
-        printf("EMPATE! As cidades tem quantidade de população igual.\n");
-    } else if (populacao_H3 > populacao_H4 ){
+    if (populacao_H3 > populacao_H4 ){
         printf("Vitória da Conquista vence em quantidade de população\n");
+        resultado1H3eH4 = 1;
     } else{
         printf("Camacari vence em quantidade de população\n");
+        resultado1H3eH4 = 0;
     }
     break;
 
     case 3:
     printf("Vitória da Conquista tem área de: %d\n", area_H3);
     printf("Camacari tem área de: %d\n", area_H4);
-    if (area_H3 == area_H4 ){
-        printf("EMPATE! As cidades tem área igual.\n");
-    } else if (area_H3 > area_H4 ){
+    if (area_H3 > area_H4 ){
         printf("Vitória da Conquista vence em área\n");
+        resultado1H3eH4 = 1;
     } else{
         printf("Camacari vence em área\n");
+        resultado1H3eH4 = 0;
     }
     break;
 
     case 4:
     printf("Vitória da Conquista tem PIB de: %d\n", PIB_H3 );
     printf("Camacari tem PIB de: %d\n", PIB_H4);
-    if (PIB_H3 == PIB_H4 ){
-        printf("EMPATE! As cidades tem PIB igual.\n");
-    } else if (PIB_H3  > PIB_H4 ){
+    if (PIB_H3  > PIB_H4 ){
         printf("Vitória da Conquista vence em PIB\n");
+        resultado1H3eH4 = 1;
     } else{
         printf("Camacari vence em PIB\n");
+        resultado1H3eH4 = 0;
     }
     break;
 
     case 5:
     printf("Vitória da Conquista tem densidade populacional de: %f\n", densidade_populacional_H3);
     printf("Camacari tem densidade populacional de: %f\n", densidade_populacional_H4);
-    if (densidade_populacional_H3 == densidade_populacional_H4 ){
-        printf("EMPATE! As cidade têm densidade populacional igual.\n");
-    } else if (densidade_populacional_H3  < densidade_populacional_H4 ){
+    if (densidade_populacional_H3  < densidade_populacional_H4 ){
         printf("Vitória da Conquista vence em densidade populacional\n");
+        resultado1H3eH4 = 1;
     } else{
         printf("Camacari vence densidade populacional\n");
+        resultado1H3eH4 = 0;
     }
     break;
 
     case 6:
     printf("Vitória da Conquista tem PIB per capita de: %f\n", pib_percapita_H3 );
     printf("Camacari tem PIB per capita de: %f\n", pib_percapita_H4);
-    if (pib_percapita_H3 == pib_percapita_H4){
-        printf("EMPATE! As cidades tem PIB per capita igual.\n");
-    } else if (pib_percapita_H3 > pib_percapita_H4){
+    if (pib_percapita_H3 > pib_percapita_H4){
         printf("vitória da Conquista vence em PIB per capita\n");
+        resultado1H3eH4 = 1;
     } else{
         printf("Camacari vence em PIB per capita\n");
+        resultado1H3eH4 = 0;
+    } 
+    break;
+    
+    default:
+            printf("Opção inválida\n");
+    break;
+    }
+    printf("\n");
+
+    switch(opcao2H3eH4)
+    {
+    case 1:
+    printf("Vitória da Conquista tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H3);
+    printf("Camacari tem nº de pontos turísticos: %d\n", numero_de_pontos_turisticos_H4);
+    if (numero_de_pontos_turisticos_H3 > numero_de_pontos_turisticos_H4 ){
+        printf("Vitória da Conquista vence em nº de pontos turísticos\n");
+        resultado2H3eH4 = 1;
+    } else{
+        printf("Camacari vence em nº de pontos turísticos\n");
+        resultado2H3eH4 = 0;
+    }
+    break;
+
+    case 2:
+    printf("Vitória da Conquista tem de população: %d\n", populacao_H3);
+    printf("Camacari tem de população: %d\n", populacao_H4);
+    if (populacao_H3 > populacao_H4 ){
+        printf("Vitória da Conquista vence em quantidade de população\n");
+        resultado2H3eH4 = 1;
+    } else{
+        printf("Camacari vence em quantidade de população\n");
+        resultado2H3eH4 = 0;
+    }
+    break;
+
+    case 3:
+    printf("Vitória da Conquista tem área de: %d\n", area_H3);
+    printf("Camacari tem área de: %d\n", area_H4);
+    if (area_H3 > area_H4 ){
+        printf("Vitória da Conquista vence em área\n");
+        resultado2H3eH4 = 1;
+    } else{
+        printf("Camacari vence em área\n");
+        resultado2H3eH4 = 0;
+    }
+    break;
+
+    case 4:
+    printf("Vitória da Conquista tem PIB de: %d\n", PIB_H3 );
+    printf("Camacari tem PIB de: %d\n", PIB_H4);
+    if (PIB_H3  > PIB_H4 ){
+        printf("Vitória da Conquista vence em PIB\n");
+        resultado2H3eH4 = 1;
+    } else{
+        printf("Camacari vence em PIB\n");
+        resultado2H3eH4 = 0;
+    }
+    break;
+
+    case 5:
+    printf("Vitória da Conquista tem densidade populacional de: %f\n", densidade_populacional_H3);
+    printf("Camacari tem densidade populacional de: %f\n", densidade_populacional_H4);
+    if (densidade_populacional_H3  < densidade_populacional_H4 ){
+        printf("Vitória da Conquista vence em densidade populacional\n");
+        resultado2H3eH4 = 1;
+    } else{
+        printf("Camacari vence densidade populacional\n");
+        resultado2H3eH4 = 0;
+    }
+    break;
+
+    case 6:
+    printf("Vitória da Conquista tem PIB per capita de: %f\n", pib_percapita_H3 );
+    printf("Camacari tem PIB per capita de: %f\n", pib_percapita_H4);
+    if (pib_percapita_H3 > pib_percapita_H4){
+        printf("vitória da Conquista vence em PIB per capita\n");
+        resultado2H3eH4 = 1;
+    } else{
+        printf("Camacari vence em PIB per capita\n");
+        resultado2H3eH4 = 0;
     } 
     break;
     
